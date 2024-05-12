@@ -1,7 +1,7 @@
 # python modules
 from flask_openapi3 import APIBlueprint, Tag
 from flask import request as req
-
+from flask_cors import cross_origin
 # OpenAPI
 from OpenAPI.commons import (
     BadRequest,
@@ -45,6 +45,7 @@ appRegistry = APIBlueprint(
 )
 
 @appRegistry.post("", responses={"201": ResponsePost}, security=[{"jwt": []}])
+@cross_origin(supports_credentials=True)
 def app_registry_request_post(header: Headers, body: RequestBodyReg):
     """
     Endpoint post example

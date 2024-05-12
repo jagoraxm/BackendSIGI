@@ -28,12 +28,7 @@ def create_app():
     # set app using OpenAPI
     app = OpenAPI(__name__, info=info, security_schemes=security_schemes)
 
-    CORS(app)
-    cors = CORS(app, resource={
-        r"/service/api/*":{
-            "origins":"http://localhost:5173/"
-        }
-    })
+    cors = CORS(app, origins=["http://localhost:5173/", "http://localhost:5173", "localhost:5173/"])
 
     # setup with the configuration provided
     app.config["ENVIRONMENT"] = config.environment
