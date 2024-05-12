@@ -1,0 +1,57 @@
+name: Test Dev Pipeline
+
+pool:
+  vmImage: ubuntu-latest
+
+trigger:
+  - develop
+
+pr:
+  - feature/*
+  - bugfix/*
+
+variables:
+  - name: 'GitVersion.SemVer'
+    value: ''
+  
+stages:
+- stage: Build
+  jobs:
+  - job: BuildAndPush
+    steps:
+    - task: gitversion/setup@0
+      inputs:
+        versionSpec: '5.x'
+
+    - task: gitversion/execute@0
+      inputs:
+        useConfigFile: true
+        configFilePath: 'GitVersion.yml'
+        
+    - bash: |
+       echo "##vso[task.setvariable variable=Semver;isOutput=true]$(GitVersion.SemVer)"
+      name: SetGitVersion
+
+    - task: Docker@2
+      inputs:
+        command: buildAndPush
+        containerRegistry: 'Azure Container Registry-N'
+        repository: cv-ssces
+        tags: '$(GitVersion.SemVer)'
+
+- stage: Deploy
+  jobs:
+  - job: 'DeployToAppService'
+    variables:
+      GitVersion.Semver: $[stageDependencies.Build.BuildAndPush.outputs['SetGitVersion.SemVer']]
+    steps:
+    - bash: echo semver $(GitVersion.Semver)
+    - task: AzureRmWebAppDeployment@4
+      inputs:
+        ConnectionType: 'AzureRM'
+        azureSubscription: 'Lottus Registry-N'
+        appType: 'webAppContainer'
+        WebAppName: 'app-cv-ssces-dev'
+        DockerNamespace: 'lottus.azurecr.io'
+        DockerRepository: 'cv-ssces'
+        DockerImageTag: '$(GitVersion.Semver)'
