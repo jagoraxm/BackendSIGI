@@ -1,6 +1,6 @@
 import pytest
 import requests
-from app import create_app
+from main import create_app
 
 from config import Settings
 
