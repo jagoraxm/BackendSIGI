@@ -1,3 +1,0 @@
-ULA = "ULA"
-UTC = "UTC"
-UTG = "UTG"
