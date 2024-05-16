@@ -21,9 +21,6 @@ from constants.routes import APP_LOGIN_ROUTE
 # services
 from services.logger_service import logger
 
-# repositories
-from repositories.table_repository import find_all
-
 from database.mysql.myDatabase import obtener_conexion
 
 from services.secure_service import decrypt_check_pass

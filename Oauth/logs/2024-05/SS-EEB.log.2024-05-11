@@ -1,0 +1,2024 @@
+INFO: [11/May 17:09:56] <module>(57) -- service-name running at port: 9094
+INFO: [11/May 17:09:56] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 17:09:56] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 17:09:56] _log(187) --  * Restarting with stat
+INFO: [11/May 17:09:57] <module>(57) -- service-name running at port: 9094
+WARNING: [11/May 17:09:57] _log(187) --  * Debugger is active!
+INFO: [11/May 17:09:57] _log(187) --  * Debugger PIN: 207-394-764
+INFO: [11/May 17:17:11] <module>(57) -- service-name running at port: 9094
+INFO: [11/May 17:17:11] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 17:17:11] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 17:17:11] _log(187) --  * Restarting with stat
+INFO: [11/May 17:17:12] <module>(57) -- service-name running at port: 9094
+WARNING: [11/May 17:17:12] _log(187) --  * Debugger is active!
+INFO: [11/May 17:17:12] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 17:17:15] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:17:15] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 17:17:15] __call__(67) -- headers: Content-Length: 56
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:17:15] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:17:15] app_login_request_post(74) -- Hola jagorax@gmail.com desde flask
+DEBUG: [11/May 17:17:15] app_login_request_post(85) -- User -> jagorax@gmail.com
+DEBUG: [11/May 17:17:15] succesful_response_login(89) -- $2b$12$WDt5z5jjsF6UW2fG7Ulz0OESqiXPbU8WvrtuocXuqmW3LTsgyYY16 - Login response was successful
+INFO: [11/May 17:17:15] _log(187) -- 127.0.0.1 - - [11/May/2024 17:17:15] "POST /service/api/auth/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 17:17:48] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:17:48] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 17:17:48] __call__(67) -- headers: Content-Length: 56
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:17:48] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:17:48] app_login_request_post(74) -- Hola jagorax@gmail.com desde flask
+INFO: [11/May 17:17:48] _log(187) -- 127.0.0.1 - - [11/May/2024 17:17:48] "POST /service/api/auth/v1 HTTP/1.1" 200 -
+INFO: [11/May 17:18:44] _log(187) --  * Detected change in '/Users/jonathanariasgarcia/Dev/ipn/BackendSIGI/Oauth/apps/registry.py', reloading
+INFO: [11/May 17:18:44] _log(187) --  * Restarting with stat
+INFO: [11/May 17:18:44] <module>(57) -- service-name running at port: 9094
+WARNING: [11/May 17:18:44] _log(187) --  * Debugger is active!
+INFO: [11/May 17:18:44] _log(187) --  * Debugger PIN: 207-394-764
+INFO: [11/May 17:19:05] _log(187) --  * Detected change in '/Users/jonathanariasgarcia/Dev/ipn/BackendSIGI/Oauth/services/set_responses_service.py', reloading
+INFO: [11/May 17:19:05] _log(187) --  * Restarting with stat
+INFO: [11/May 17:19:06] <module>(57) -- service-name running at port: 9094
+WARNING: [11/May 17:19:06] _log(187) --  * Debugger is active!
+INFO: [11/May 17:19:06] _log(187) --  * Debugger PIN: 207-394-764
+INFO: [11/May 17:19:18] <module>(57) -- service-name running at port: 9094
+INFO: [11/May 17:19:18] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 17:19:18] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 17:19:18] _log(187) --  * Restarting with stat
+INFO: [11/May 17:19:18] <module>(57) -- service-name running at port: 9094
+WARNING: [11/May 17:19:18] _log(187) --  * Debugger is active!
+INFO: [11/May 17:19:18] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 17:19:29] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:19:29] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 17:19:29] __call__(67) -- headers: Content-Length: 56
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:19:29] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:19:29] app_login_request_post(74) -- Hola jagorax@gmail.com desde flask
+INFO: [11/May 17:19:29] _log(187) -- 127.0.0.1 - - [11/May/2024 17:19:29] "POST /service/api/auth/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 17:19:32] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:19:32] __call__(65) -- URL accessed: http://localhost:9094/service/api/reg/v1
+DEBUG: [11/May 17:19:32] __call__(67) -- headers: Content-Length: 131
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:19:32] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:19:32] app_registry_request_post(57) -- Hola jagorax@gmail.com desde flask
+DEBUG: [11/May 17:19:32] succesful_response_registry(106) -- 0 - Registry response was successful
+INFO: [11/May 17:19:32] _log(187) -- 127.0.0.1 - - [11/May/2024 17:19:32] "POST /service/api/reg/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 17:19:45] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:19:45] __call__(65) -- URL accessed: http://localhost:9094/service/api/reg/v1
+DEBUG: [11/May 17:19:45] __call__(67) -- headers: Content-Length: 131
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:19:45] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:19:45] app_registry_request_post(57) -- Hola jagorax@gmail.com desde flask
+DEBUG: [11/May 17:19:45] succesful_response_registry(106) -- 0 - Registry response was successful
+INFO: [11/May 17:19:45] _log(187) -- 127.0.0.1 - - [11/May/2024 17:19:45] "POST /service/api/reg/v1 HTTP/1.1" 200 -
+INFO: [11/May 17:21:14] <module>(57) -- service-name running at port: 9094
+INFO: [11/May 17:21:14] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 17:21:14] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 17:21:14] _log(187) --  * Restarting with stat
+INFO: [11/May 17:21:15] <module>(57) -- service-name running at port: 9094
+WARNING: [11/May 17:21:15] _log(187) --  * Debugger is active!
+INFO: [11/May 17:21:15] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 17:21:20] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:21:20] __call__(65) -- URL accessed: http://localhost:9094/service/api/reg/v1
+DEBUG: [11/May 17:21:20] __call__(67) -- headers: Content-Length: 131
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:21:20] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:21:20] app_registry_request_post(57) -- Hola jagorax@gmail.com desde flask
+DEBUG: [11/May 17:21:20] succesful_response_registry(106) -- 0 - Registry response was successful
+INFO: [11/May 17:21:20] _log(187) -- 127.0.0.1 - - [11/May/2024 17:21:20] "POST /service/api/reg/v1 HTTP/1.1" 200 -
+INFO: [11/May 17:22:00] _log(187) --  * Detected change in '/Users/jonathanariasgarcia/Dev/ipn/BackendSIGI/Oauth/apps/registry.py', reloading
+INFO: [11/May 17:22:00] _log(187) --  * Restarting with stat
+INFO: [11/May 17:22:00] <module>(57) -- service-name running at port: 9094
+WARNING: [11/May 17:22:00] _log(187) --  * Debugger is active!
+INFO: [11/May 17:22:00] _log(187) --  * Debugger PIN: 207-394-764
+INFO: [11/May 17:22:04] <module>(57) -- service-name running at port: 9094
+INFO: [11/May 17:22:04] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 17:22:04] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 17:22:04] _log(187) --  * Restarting with stat
+INFO: [11/May 17:22:05] <module>(57) -- service-name running at port: 9094
+WARNING: [11/May 17:22:05] _log(187) --  * Debugger is active!
+INFO: [11/May 17:22:05] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 17:22:08] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:22:08] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 17:22:08] __call__(67) -- headers: Content-Length: 56
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:22:08] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:22:08] app_login_request_post(74) -- Hola jagorax@gmail.com desde flask
+INFO: [11/May 17:22:08] _log(187) -- 127.0.0.1 - - [11/May/2024 17:22:08] "POST /service/api/auth/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 17:22:12] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:22:12] __call__(65) -- URL accessed: http://localhost:9094/service/api/reg/v1
+DEBUG: [11/May 17:22:12] __call__(67) -- headers: Content-Length: 131
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:22:12] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:22:12] app_registry_request_post(57) -- Hola jagorax@gmail.com desde flask
+DEBUG: [11/May 17:22:12] app_registry_request_post(71) -- Filas insertadas -> 1
+DEBUG: [11/May 17:22:12] succesful_response_registry(106) -- 1 - Registry response was successful
+INFO: [11/May 17:22:12] _log(187) -- 127.0.0.1 - - [11/May/2024 17:22:12] "POST /service/api/reg/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 17:22:24] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:22:24] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 17:22:24] __call__(67) -- headers: Content-Length: 56
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:22:24] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:22:24] app_login_request_post(74) -- Hola jagorax@gmail.com desde flask
+DEBUG: [11/May 17:22:24] app_login_request_post(85) -- User -> jagorax@gmail.com
+DEBUG: [11/May 17:22:24] succesful_response_login(89) -- $2b$12$WDt5z5jjsF6UW2fG7Ulz0OESqiXPbU8WvrtuocXuqmW3LTsgyYY16 - Login response was successful
+INFO: [11/May 17:22:25] _log(187) -- 127.0.0.1 - - [11/May/2024 17:22:25] "POST /service/api/auth/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 17:22:29] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:22:29] __call__(65) -- URL accessed: http://localhost:9094/service/api/reg/v1
+DEBUG: [11/May 17:22:29] __call__(67) -- headers: Content-Length: 131
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:22:29] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:22:29] app_registry_request_post(57) -- Hola jagorax@gmail.com desde flask
+DEBUG: [11/May 17:22:29] succesful_response_registry(106) -- 0 - Registry response was successful
+INFO: [11/May 17:22:29] _log(187) -- 127.0.0.1 - - [11/May/2024 17:22:29] "POST /service/api/reg/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 17:23:26] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:23:26] __call__(65) -- URL accessed: http://localhost:9094/service/api/reg/v1
+DEBUG: [11/May 17:23:26] __call__(67) -- headers: Content-Length: 132
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:23:26] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:23:26] app_registry_request_post(57) -- Hola jagorax1@gmail.com desde flask
+DEBUG: [11/May 17:23:27] app_registry_request_post(71) -- Filas insertadas -> 1
+DEBUG: [11/May 17:23:27] succesful_response_registry(106) -- 1 - Registry response was successful
+INFO: [11/May 17:23:27] _log(187) -- 127.0.0.1 - - [11/May/2024 17:23:27] "POST /service/api/reg/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 17:23:36] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:23:36] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 17:23:36] __call__(67) -- headers: Content-Length: 57
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:23:36] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:23:36] app_login_request_post(74) -- Hola jagorax1@gmail.com desde flask
+DEBUG: [11/May 17:23:36] app_login_request_post(85) -- User -> jagorax1@gmail.com
+DEBUG: [11/May 17:23:36] succesful_response_login(89) -- $2b$12$WDt5z5jjsF6UW2fG7Ulz0OESqiXPbU8WvrtuocXuqmW3LTsgyYY16 - Login response was successful
+INFO: [11/May 17:23:36] _log(187) -- 127.0.0.1 - - [11/May/2024 17:23:36] "POST /service/api/auth/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 17:23:39] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:23:39] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 17:23:39] __call__(67) -- headers: Content-Length: 58
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:23:39] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:23:39] app_login_request_post(74) -- Hola jagorax1@gmail.com desde flask
+DEBUG: [11/May 17:23:39] app_login_request_post(85) -- User -> jagorax1@gmail.com
+DEBUG: [11/May 17:23:39] succesful_response_login(89) -- $2b$12$WDt5z5jjsF6UW2fG7Ulz0OESqiXPbU8WvrtuocXuqmW3LTsgyYY16 - Login response was successful
+INFO: [11/May 17:23:40] _log(187) -- 127.0.0.1 - - [11/May/2024 17:23:40] "POST /service/api/auth/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 17:23:45] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:23:45] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 17:23:45] __call__(67) -- headers: Content-Length: 57
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:23:45] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:23:45] app_login_request_post(74) -- Hola jagorax2@gmail.com desde flask
+INFO: [11/May 17:23:45] _log(187) -- 127.0.0.1 - - [11/May/2024 17:23:45] "POST /service/api/auth/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 17:23:51] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 17:23:51] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 17:23:51] __call__(67) -- headers: Content-Length: 56
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 17:23:51] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 17:23:51] app_login_request_post(74) -- Hola jagorax@gmail.com desde flask
+DEBUG: [11/May 17:23:51] app_login_request_post(85) -- User -> jagorax@gmail.com
+DEBUG: [11/May 17:23:51] succesful_response_login(89) -- $2b$12$WDt5z5jjsF6UW2fG7Ulz0OESqiXPbU8WvrtuocXuqmW3LTsgyYY16 - Login response was successful
+INFO: [11/May 17:23:52] _log(187) -- 127.0.0.1 - - [11/May/2024 17:23:52] "POST /service/api/auth/v1 HTTP/1.1" 200 -
+INFO: [11/May 18:06:10] <module>(57) -- service-name running at port: 9094
+INFO: [11/May 18:06:10] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 18:06:10] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 18:06:10] _log(187) --  * Restarting with stat
+INFO: [11/May 18:06:10] <module>(57) -- service-name running at port: 9094
+WARNING: [11/May 18:06:10] _log(187) --  * Debugger is active!
+INFO: [11/May 18:06:10] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 18:06:15] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:06:15] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:06:15] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 18:06:15] __call__(75) -- No Service-Id
+INFO: [11/May 18:06:15] _log(187) -- 127.0.0.1 - - [11/May/2024 18:06:15] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 18:08:48] <module>(59) -- service-name running at port: 9094
+INFO: [11/May 18:08:48] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 18:08:48] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 18:08:48] _log(187) --  * Restarting with stat
+INFO: [11/May 18:08:48] <module>(59) -- service-name running at port: 9094
+WARNING: [11/May 18:08:48] _log(187) --  * Debugger is active!
+INFO: [11/May 18:08:48] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 18:09:31] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:09:31] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:09:31] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 18:09:31] __call__(75) -- No Service-Id
+INFO: [11/May 18:09:31] _log(187) -- 127.0.0.1 - - [11/May/2024 18:09:31] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 18:10:02] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:10:02] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:10:02] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 18:10:02] __call__(75) -- No Service-Id
+INFO: [11/May 18:10:02] _log(187) -- 127.0.0.1 - - [11/May/2024 18:10:02] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 18:12:13] _log(187) --  * Detected change in '/Users/jonathanariasgarcia/Dev/ipn/BackendSIGI/Oauth/app.py', reloading
+INFO: [11/May 18:12:13] _log(187) --  * Restarting with stat
+INFO: [11/May 18:12:13] <module>(59) -- service-name running at port: 9094
+WARNING: [11/May 18:12:13] _log(187) --  * Debugger is active!
+INFO: [11/May 18:12:13] _log(187) --  * Debugger PIN: 207-394-764
+INFO: [11/May 18:12:24] <module>(59) -- service-name running at port: 9094
+INFO: [11/May 18:12:24] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 18:12:24] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 18:12:24] _log(187) --  * Restarting with stat
+INFO: [11/May 18:12:24] <module>(59) -- service-name running at port: 9094
+WARNING: [11/May 18:12:24] _log(187) --  * Debugger is active!
+INFO: [11/May 18:12:24] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 18:12:30] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:12:30] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:12:30] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 18:12:30] __call__(75) -- No Service-Id
+INFO: [11/May 18:12:30] _log(187) -- 127.0.0.1 - - [11/May/2024 18:12:30] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 18:15:47] _log(187) --  * Detected change in '/Users/jonathanariasgarcia/Dev/ipn/BackendSIGI/Oauth/app.py', reloading
+INFO: [11/May 18:15:47] _log(187) --  * Restarting with stat
+INFO: [11/May 18:15:48] <module>(59) -- service-name running at port: 9094
+WARNING: [11/May 18:15:48] _log(187) --  * Debugger is active!
+INFO: [11/May 18:15:48] _log(187) --  * Debugger PIN: 207-394-764
+INFO: [11/May 18:15:50] <module>(59) -- service-name running at port: 9094
+INFO: [11/May 18:15:50] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 18:15:50] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 18:15:50] _log(187) --  * Restarting with stat
+INFO: [11/May 18:15:50] <module>(59) -- service-name running at port: 9094
+WARNING: [11/May 18:15:50] _log(187) --  * Debugger is active!
+INFO: [11/May 18:15:50] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 18:15:59] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:15:59] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:15:59] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 18:15:59] __call__(75) -- No Service-Id
+INFO: [11/May 18:15:59] _log(187) -- 127.0.0.1 - - [11/May/2024 18:15:59] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 18:16:29] _log(187) --  * Detected change in '/Users/jonathanariasgarcia/Dev/ipn/BackendSIGI/Oauth/app.py', reloading
+INFO: [11/May 18:16:29] _log(187) --  * Restarting with stat
+INFO: [11/May 18:16:29] <module>(59) -- service-name running at port: 9094
+WARNING: [11/May 18:16:29] _log(187) --  * Debugger is active!
+INFO: [11/May 18:16:29] _log(187) --  * Debugger PIN: 207-394-764
+INFO: [11/May 18:16:32] <module>(59) -- service-name running at port: 9094
+INFO: [11/May 18:16:32] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 18:16:32] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 18:16:32] _log(187) --  * Restarting with stat
+INFO: [11/May 18:16:33] <module>(59) -- service-name running at port: 9094
+WARNING: [11/May 18:16:33] _log(187) --  * Debugger is active!
+INFO: [11/May 18:16:33] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 18:16:35] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:16:35] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:16:35] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 18:16:35] __call__(75) -- No Service-Id
+INFO: [11/May 18:16:35] _log(187) -- 127.0.0.1 - - [11/May/2024 18:16:35] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 18:16:50] _log(187) --  * Detected change in '/Users/jonathanariasgarcia/Dev/ipn/BackendSIGI/Oauth/app.py', reloading
+INFO: [11/May 18:16:50] _log(187) --  * Restarting with stat
+INFO: [11/May 18:16:50] <module>(59) -- service-name running at port: 9094
+WARNING: [11/May 18:16:50] _log(187) --  * Debugger is active!
+INFO: [11/May 18:16:50] _log(187) --  * Debugger PIN: 207-394-764
+INFO: [11/May 18:17:08] <module>(59) -- service-name running at port: 9094
+INFO: [11/May 18:17:08] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 18:17:08] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 18:17:08] _log(187) --  * Restarting with stat
+INFO: [11/May 18:17:09] <module>(59) -- service-name running at port: 9094
+WARNING: [11/May 18:17:09] _log(187) --  * Debugger is active!
+INFO: [11/May 18:17:09] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 18:17:12] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:17:12] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:17:12] __call__(67) -- headers: Content-Length: 56
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 18:17:12] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 18:17:12] app_login_request_post(74) -- Hola jagorax@gmail.com desde flask
+DEBUG: [11/May 18:17:12] app_login_request_post(85) -- User -> jagorax@gmail.com
+DEBUG: [11/May 18:17:12] succesful_response_login(89) -- $2b$12$WDt5z5jjsF6UW2fG7Ulz0OESqiXPbU8WvrtuocXuqmW3LTsgyYY16 - Login response was successful
+INFO: [11/May 18:17:12] _log(187) -- 127.0.0.1 - - [11/May/2024 18:17:12] "POST /service/api/auth/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 18:17:19] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:17:19] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:17:19] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 18:17:19] __call__(75) -- No Service-Id
+INFO: [11/May 18:17:19] _log(187) -- 127.0.0.1 - - [11/May/2024 18:17:19] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 18:19:51] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:19:51] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:19:51] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 18:19:51] __call__(75) -- No Service-Id
+INFO: [11/May 18:19:51] _log(187) -- 127.0.0.1 - - [11/May/2024 18:19:51] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 18:20:03] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:20:03] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:20:03] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 18:20:03] __call__(75) -- No Service-Id
+INFO: [11/May 18:20:03] _log(187) -- 127.0.0.1 - - [11/May/2024 18:20:03] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 18:20:13] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:20:13] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:20:13] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 18:20:13] __call__(75) -- No Service-Id
+INFO: [11/May 18:20:13] _log(187) -- 127.0.0.1 - - [11/May/2024 18:20:13] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 18:20:17] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:20:17] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:20:17] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 18:20:17] __call__(75) -- No Service-Id
+INFO: [11/May 18:20:17] _log(187) -- 127.0.0.1 - - [11/May/2024 18:20:17] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 18:20:47] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 18:20:47] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 18:20:47] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 18:20:47] __call__(75) -- No Service-Id
+INFO: [11/May 18:20:47] _log(187) -- 127.0.0.1 - - [11/May/2024 18:20:47] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 20:46:48] <module>(59) -- service-name running at port: 9094
+INFO: [11/May 20:46:49] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 20:46:49] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 20:46:49] _log(187) --  * Restarting with stat
+INFO: [11/May 20:46:49] <module>(59) -- service-name running at port: 9094
+WARNING: [11/May 20:46:49] _log(187) --  * Debugger is active!
+INFO: [11/May 20:46:49] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 20:46:55] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:46:55] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:46:55] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:46:55] __call__(75) -- No Service-Id
+INFO: [11/May 20:46:55] _log(187) -- 127.0.0.1 - - [11/May/2024 20:46:55] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:47:32] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:47:32] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:47:32] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:47:32] __call__(75) -- No Service-Id
+INFO: [11/May 20:47:32] _log(187) -- 127.0.0.1 - - [11/May/2024 20:47:32] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:47:52] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:47:52] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:47:52] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:47:52] __call__(75) -- No Service-Id
+INFO: [11/May 20:47:52] _log(187) -- 127.0.0.1 - - [11/May/2024 20:47:52] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:48:03] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:48:03] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:48:03] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:48:03] __call__(75) -- No Service-Id
+INFO: [11/May 20:48:03] _log(187) -- 127.0.0.1 - - [11/May/2024 20:48:03] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:49:38] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:49:38] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:49:38] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:49:38] __call__(75) -- No Service-Id
+INFO: [11/May 20:49:38] _log(187) -- 127.0.0.1 - - [11/May/2024 20:49:38] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:50:20] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:50:20] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:50:20] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:50:20] __call__(75) -- No Service-Id
+INFO: [11/May 20:50:20] _log(187) -- 127.0.0.1 - - [11/May/2024 20:50:20] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:50:31] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:50:31] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:50:31] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:50:31] __call__(75) -- No Service-Id
+INFO: [11/May 20:50:31] _log(187) -- 127.0.0.1 - - [11/May/2024 20:50:31] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:50:33] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:50:33] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:50:33] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:50:33] __call__(75) -- No Service-Id
+INFO: [11/May 20:50:33] _log(187) -- 127.0.0.1 - - [11/May/2024 20:50:33] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:50:34] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:50:34] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:50:34] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:50:34] __call__(75) -- No Service-Id
+INFO: [11/May 20:50:34] _log(187) -- 127.0.0.1 - - [11/May/2024 20:50:34] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:50:34] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:50:34] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:50:34] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:50:34] __call__(75) -- No Service-Id
+INFO: [11/May 20:50:34] _log(187) -- 127.0.0.1 - - [11/May/2024 20:50:34] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:50:34] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:50:34] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:50:34] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:50:34] __call__(75) -- No Service-Id
+INFO: [11/May 20:50:34] _log(187) -- 127.0.0.1 - - [11/May/2024 20:50:34] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:50:34] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:50:34] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:50:34] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:50:34] __call__(75) -- No Service-Id
+INFO: [11/May 20:50:34] _log(187) -- 127.0.0.1 - - [11/May/2024 20:50:34] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:50:34] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:50:34] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:50:34] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:50:34] __call__(75) -- No Service-Id
+INFO: [11/May 20:50:34] _log(187) -- 127.0.0.1 - - [11/May/2024 20:50:34] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:51:30] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:30] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/swagger
+INFO: [11/May 20:51:30] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:30] "GET /openapi/swagger HTTP/1.1" 200 -
+DEBUG: [11/May 20:51:30] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:30] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/css/swagger-ui.css
+DEBUG: [11/May 20:51:30] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:30] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:30] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/js/swagger-ui-bundle.js
+DEBUG: [11/May 20:51:30] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/js/swagger-ui-standalone-preset.js
+INFO: [11/May 20:51:30] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:30] "GET /openapi/static/css/swagger-ui.css HTTP/1.1" 200 -
+INFO: [11/May 20:51:30] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:30] "GET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1" 200 -
+INFO: [11/May 20:51:30] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:30] "GET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+DEBUG: [11/May 20:51:31] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:31] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/images/swagger.svg
+INFO: [11/May 20:51:31] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:31] "GET /openapi/static/images/swagger.svg HTTP/1.1" 200 -
+DEBUG: [11/May 20:51:31] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:31] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/openapi.json
+INFO: [11/May 20:51:31] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:31] "GET /openapi/openapi.json HTTP/1.1" 200 -
+DEBUG: [11/May 20:51:32] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:32] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/swagger
+INFO: [11/May 20:51:32] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:32] "GET /openapi/swagger HTTP/1.1" 200 -
+DEBUG: [11/May 20:51:32] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:32] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/css/swagger-ui.css
+INFO: [11/May 20:51:32] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:32] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 -
+DEBUG: [11/May 20:51:32] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:32] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:32] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/js/swagger-ui-bundle.js
+DEBUG: [11/May 20:51:32] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/js/swagger-ui-standalone-preset.js
+INFO: [11/May 20:51:32] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:32] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+INFO: [11/May 20:51:32] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:32] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+DEBUG: [11/May 20:51:32] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:32] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/images/swagger.svg
+INFO: [11/May 20:51:32] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:32] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 -
+DEBUG: [11/May 20:51:32] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:32] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/openapi.json
+DEBUG: [11/May 20:51:32] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:51:32] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:32] "GET /openapi/openapi.json HTTP/1.1" 200 -
+DEBUG: [11/May 20:51:32] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/images/swagger.svg
+INFO: [11/May 20:51:32] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:32] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 -
+DEBUG: [11/May 20:51:37] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:37] __call__(94) -- Skipping validation from URL: http://localhost:9094/
+INFO: [11/May 20:51:37] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:37] "[32mGET / HTTP/1.1[0m" 302 -
+DEBUG: [11/May 20:51:37] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:37] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/swagger
+INFO: [11/May 20:51:37] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:37] "GET /openapi/swagger HTTP/1.1" 200 -
+DEBUG: [11/May 20:51:37] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:37] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:37] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:37] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/js/swagger-ui-bundle.js
+DEBUG: [11/May 20:51:37] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/css/swagger-ui.css
+DEBUG: [11/May 20:51:37] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/js/swagger-ui-standalone-preset.js
+INFO: [11/May 20:51:37] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:37] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 -
+INFO: [11/May 20:51:37] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:37] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+INFO: [11/May 20:51:37] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:37] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+DEBUG: [11/May 20:51:38] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:38] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/static/images/swagger.svg
+INFO: [11/May 20:51:38] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:38] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 -
+DEBUG: [11/May 20:51:38] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 20:51:38] __call__(94) -- Skipping validation from URL: http://localhost:9094/openapi/openapi.json
+INFO: [11/May 20:51:38] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:38] "GET /openapi/openapi.json HTTP/1.1" 200 -
+DEBUG: [11/May 20:51:55] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:51:55] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:51:55] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:51:55] __call__(75) -- No Service-Id
+INFO: [11/May 20:51:55] _log(187) -- 127.0.0.1 - - [11/May/2024 20:51:55] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:56:50] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:56:50] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:56:50] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:56:50] __call__(75) -- No Service-Id
+INFO: [11/May 20:56:50] _log(187) -- 127.0.0.1 - - [11/May/2024 20:56:50] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:59:15] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:59:15] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:59:15] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:59:15] __call__(75) -- No Service-Id
+INFO: [11/May 20:59:15] _log(187) -- 127.0.0.1 - - [11/May/2024 20:59:15] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 20:59:23] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 20:59:23] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 20:59:23] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 20:59:23] __call__(75) -- No Service-Id
+INFO: [11/May 20:59:23] _log(187) -- 127.0.0.1 - - [11/May/2024 20:59:23] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:00:45] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:00:45] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:00:45] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:00:45] __call__(75) -- No Service-Id
+INFO: [11/May 21:00:45] _log(187) -- 127.0.0.1 - - [11/May/2024 21:00:45] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:03:13] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:03:13] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:03:13] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:03:13] __call__(75) -- No Service-Id
+INFO: [11/May 21:03:13] _log(187) -- 127.0.0.1 - - [11/May/2024 21:03:13] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:03:20] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:03:20] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:03:20] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:03:20] __call__(75) -- No Service-Id
+INFO: [11/May 21:03:20] _log(187) -- 127.0.0.1 - - [11/May/2024 21:03:20] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:04:20] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:04:20] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:04:20] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:04:20] __call__(75) -- No Service-Id
+INFO: [11/May 21:04:20] _log(187) -- 127.0.0.1 - - [11/May/2024 21:04:20] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:04:57] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:04:57] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:04:57] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:04:57] __call__(75) -- No Service-Id
+INFO: [11/May 21:04:57] _log(187) -- 127.0.0.1 - - [11/May/2024 21:04:57] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:06:31] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:06:31] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:06:31] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:06:31] __call__(75) -- No Service-Id
+INFO: [11/May 21:06:31] _log(187) -- 127.0.0.1 - - [11/May/2024 21:06:31] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:07:20] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:07:20] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:07:20] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:07:20] __call__(75) -- No Service-Id
+INFO: [11/May 21:07:20] _log(187) -- 127.0.0.1 - - [11/May/2024 21:07:20] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:12:04] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:12:04] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:12:04] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:12:04] __call__(75) -- No Service-Id
+INFO: [11/May 21:12:04] _log(187) -- 127.0.0.1 - - [11/May/2024 21:12:04] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 21:26:51] <module>(59) -- service-name running at port: 9094
+INFO: [11/May 21:26:51] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 21:26:51] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 21:26:51] _log(187) --  * Restarting with stat
+INFO: [11/May 21:26:51] <module>(59) -- service-name running at port: 9094
+WARNING: [11/May 21:26:51] _log(187) --  * Debugger is active!
+INFO: [11/May 21:26:51] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 21:27:00] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:27:00] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:27:00] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:27:00] __call__(75) -- No Service-Id
+INFO: [11/May 21:27:00] _log(187) -- 127.0.0.1 - - [11/May/2024 21:27:00] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 21:33:48] <module>(58) -- service-name running at port: 9094
+INFO: [11/May 21:33:48] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 21:33:48] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 21:33:48] _log(187) --  * Restarting with stat
+INFO: [11/May 21:33:48] <module>(58) -- service-name running at port: 9094
+WARNING: [11/May 21:33:48] _log(187) --  * Debugger is active!
+INFO: [11/May 21:33:48] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 21:33:56] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:33:56] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:33:56] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:33:56] __call__(75) -- No Service-Id
+INFO: [11/May 21:33:56] _log(187) -- 127.0.0.1 - - [11/May/2024 21:33:56] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:35:16] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:35:16] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:35:16] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:35:16] __call__(75) -- No Service-Id
+INFO: [11/May 21:35:16] _log(187) -- 127.0.0.1 - - [11/May/2024 21:35:16] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:35:25] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:35:25] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:35:25] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:35:25] __call__(75) -- No Service-Id
+INFO: [11/May 21:35:25] _log(187) -- 127.0.0.1 - - [11/May/2024 21:35:25] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:35:27] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:35:27] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:35:27] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:35:27] __call__(75) -- No Service-Id
+INFO: [11/May 21:35:27] _log(187) -- 127.0.0.1 - - [11/May/2024 21:35:27] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:36:06] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:36:06] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:36:06] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:36:06] __call__(75) -- No Service-Id
+INFO: [11/May 21:36:06] _log(187) -- 127.0.0.1 - - [11/May/2024 21:36:06] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:37:15] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:37:15] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:37:15] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:37:15] __call__(75) -- No Service-Id
+INFO: [11/May 21:37:15] _log(187) -- 127.0.0.1 - - [11/May/2024 21:37:15] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 21:42:34] _log(187) --  * Detected change in '/Users/jonathanariasgarcia/Dev/ipn/BackendSIGI/Oauth/app.py', reloading
+INFO: [11/May 21:42:34] _log(187) --  * Restarting with stat
+INFO: [11/May 21:42:35] <module>(58) -- service-name running at port: 9094
+WARNING: [11/May 21:42:35] _log(187) --  * Debugger is active!
+INFO: [11/May 21:42:35] _log(187) --  * Debugger PIN: 207-394-764
+INFO: [11/May 21:43:27] _log(187) --  * Detected change in '/Users/jonathanariasgarcia/Dev/ipn/BackendSIGI/Oauth/apps/registry.py', reloading
+INFO: [11/May 21:43:27] _log(187) --  * Restarting with stat
+INFO: [11/May 21:45:40] <module>(58) -- service-name running at port: 9094
+INFO: [11/May 21:45:40] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 21:45:40] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 21:45:40] _log(187) --  * Restarting with stat
+INFO: [11/May 21:45:40] <module>(58) -- service-name running at port: 9094
+WARNING: [11/May 21:45:40] _log(187) --  * Debugger is active!
+INFO: [11/May 21:45:40] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 21:45:46] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:45:46] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:45:46] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:45:46] __call__(75) -- No Service-Id
+INFO: [11/May 21:45:46] _log(187) -- 127.0.0.1 - - [11/May/2024 21:45:46] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:46:05] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:46:05] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:46:05] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:46:05] __call__(75) -- No Service-Id
+INFO: [11/May 21:46:05] _log(187) -- 127.0.0.1 - - [11/May/2024 21:46:05] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:46:28] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:46:28] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:46:28] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Sec-Ch-Ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:46:28] __call__(75) -- No Service-Id
+INFO: [11/May 21:46:28] _log(187) -- 127.0.0.1 - - [11/May/2024 21:46:28] "[31m[1mGET /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:46:28] __call__(60) -- Authorization middleware accessed.
+DEBUG: [11/May 21:46:28] __call__(94) -- Skipping validation from URL: http://localhost:9094/favicon.ico
+INFO: [11/May 21:46:28] _log(187) -- 127.0.0.1 - - [11/May/2024 21:46:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+DEBUG: [11/May 21:46:40] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:46:40] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:46:40] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Sec-Ch-Ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:46:40] __call__(75) -- No Service-Id
+INFO: [11/May 21:46:40] _log(187) -- 127.0.0.1 - - [11/May/2024 21:46:40] "[31m[1mGET /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:46:56] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:46:56] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:46:56] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Sec-Ch-Ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:46:56] __call__(75) -- No Service-Id
+INFO: [11/May 21:46:56] _log(187) -- 127.0.0.1 - - [11/May/2024 21:46:56] "[31m[1mGET /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:47:07] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:47:07] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:47:07] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Sec-Ch-Ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "macOS"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:47:07] __call__(75) -- No Service-Id
+INFO: [11/May 21:47:07] _log(187) -- 127.0.0.1 - - [11/May/2024 21:47:07] "[31m[1mGET /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 21:47:45] <module>(58) -- service-name running at port: 9094
+INFO: [11/May 21:47:45] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 21:47:45] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 21:47:45] _log(187) --  * Restarting with stat
+INFO: [11/May 21:47:46] <module>(58) -- service-name running at port: 9094
+WARNING: [11/May 21:47:46] _log(187) --  * Debugger is active!
+INFO: [11/May 21:47:46] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 21:47:57] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:47:57] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:47:57] __call__(67) -- headers: Content-Length: 56
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 21:47:57] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 21:47:57] app_login_request_post(74) -- Hola jagorax@gmail.com desde flask
+DEBUG: [11/May 21:47:57] app_login_request_post(85) -- User -> jagorax@gmail.com
+DEBUG: [11/May 21:47:57] succesful_response_login(89) -- $2b$12$WDt5z5jjsF6UW2fG7Ulz0OESqiXPbU8WvrtuocXuqmW3LTsgyYY16 - Login response was successful
+INFO: [11/May 21:47:57] _log(187) -- 127.0.0.1 - - [11/May/2024 21:47:57] "POST /service/api/auth/v1 HTTP/1.1" 200 -
+DEBUG: [11/May 21:48:59] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:48:59] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:48:59] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:48:59] __call__(75) -- No Service-Id
+INFO: [11/May 21:48:59] _log(187) -- 127.0.0.1 - - [11/May/2024 21:48:59] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:49:39] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:49:39] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:49:39] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:49:39] __call__(75) -- No Service-Id
+INFO: [11/May 21:49:39] _log(187) -- 127.0.0.1 - - [11/May/2024 21:49:39] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:49:41] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:49:41] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:49:41] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:49:41] __call__(75) -- No Service-Id
+INFO: [11/May 21:49:41] _log(187) -- 127.0.0.1 - - [11/May/2024 21:49:41] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:49:45] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:49:45] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:49:45] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:49:45] __call__(75) -- No Service-Id
+INFO: [11/May 21:49:45] _log(187) -- 127.0.0.1 - - [11/May/2024 21:49:45] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:49:46] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:49:46] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:49:46] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:49:46] __call__(75) -- No Service-Id
+INFO: [11/May 21:49:46] _log(187) -- 127.0.0.1 - - [11/May/2024 21:49:46] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:49:46] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:49:46] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:49:46] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:49:46] __call__(75) -- No Service-Id
+INFO: [11/May 21:49:46] _log(187) -- 127.0.0.1 - - [11/May/2024 21:49:46] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:49:46] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:49:46] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:49:46] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:49:46] __call__(75) -- No Service-Id
+INFO: [11/May 21:49:46] _log(187) -- 127.0.0.1 - - [11/May/2024 21:49:46] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:49:47] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:49:47] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:49:47] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:49:47] __call__(75) -- No Service-Id
+INFO: [11/May 21:49:47] _log(187) -- 127.0.0.1 - - [11/May/2024 21:49:47] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:50:24] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:50:24] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:50:24] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:50:24] __call__(75) -- No Service-Id
+INFO: [11/May 21:50:24] _log(187) -- 127.0.0.1 - - [11/May/2024 21:50:24] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:50:29] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:50:29] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:50:29] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:50:29] __call__(75) -- No Service-Id
+INFO: [11/May 21:50:29] _log(187) -- 127.0.0.1 - - [11/May/2024 21:50:29] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:50:30] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:50:30] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:50:30] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:50:30] __call__(75) -- No Service-Id
+INFO: [11/May 21:50:30] _log(187) -- 127.0.0.1 - - [11/May/2024 21:50:30] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:50:33] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:50:33] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:50:33] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:50:33] __call__(75) -- No Service-Id
+INFO: [11/May 21:50:33] _log(187) -- 127.0.0.1 - - [11/May/2024 21:50:33] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:50:42] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:50:42] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:50:42] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:50:42] __call__(75) -- No Service-Id
+INFO: [11/May 21:50:42] _log(187) -- 127.0.0.1 - - [11/May/2024 21:50:42] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:50:43] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:50:43] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:50:43] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:50:43] __call__(75) -- No Service-Id
+INFO: [11/May 21:50:43] _log(187) -- 127.0.0.1 - - [11/May/2024 21:50:43] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:50:43] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:50:43] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:50:43] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:50:43] __call__(75) -- No Service-Id
+INFO: [11/May 21:50:43] _log(187) -- 127.0.0.1 - - [11/May/2024 21:50:43] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:50:43] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:50:43] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:50:43] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:50:43] __call__(75) -- No Service-Id
+INFO: [11/May 21:50:43] _log(187) -- 127.0.0.1 - - [11/May/2024 21:50:43] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:53:41] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:53:41] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:53:41] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:53:41] __call__(75) -- No Service-Id
+INFO: [11/May 21:53:41] _log(187) -- 127.0.0.1 - - [11/May/2024 21:53:41] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:54:27] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:54:27] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:54:27] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:54:27] __call__(75) -- No Service-Id
+INFO: [11/May 21:54:27] _log(187) -- 127.0.0.1 - - [11/May/2024 21:54:27] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:54:37] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:54:37] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:54:37] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:54:37] __call__(75) -- No Service-Id
+INFO: [11/May 21:54:37] _log(187) -- 127.0.0.1 - - [11/May/2024 21:54:37] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:54:40] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:54:40] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:54:40] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:54:40] __call__(75) -- No Service-Id
+INFO: [11/May 21:54:40] _log(187) -- 127.0.0.1 - - [11/May/2024 21:54:40] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:54:52] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:54:52] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:54:52] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9
+
+
+ERROR: [11/May 21:54:52] __call__(75) -- No Service-Id
+INFO: [11/May 21:54:52] _log(187) -- 127.0.0.1 - - [11/May/2024 21:54:52] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:55:02] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:55:02] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:55:02] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:55:02] __call__(75) -- No Service-Id
+INFO: [11/May 21:55:02] _log(187) -- 127.0.0.1 - - [11/May/2024 21:55:02] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 21:55:50] _log(187) --  * Detected change in '/Users/jonathanariasgarcia/Dev/ipn/BackendSIGI/Oauth/app.py', reloading
+INFO: [11/May 21:55:50] _log(187) --  * Restarting with stat
+INFO: [11/May 21:55:50] <module>(54) -- service-name running at port: 9094
+WARNING: [11/May 21:55:50] _log(187) --  * Debugger is active!
+INFO: [11/May 21:55:50] _log(187) --  * Debugger PIN: 207-394-764
+INFO: [11/May 21:55:57] <module>(54) -- service-name running at port: 9094
+INFO: [11/May 21:55:57] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 21:55:57] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 21:55:58] _log(187) --  * Restarting with stat
+INFO: [11/May 21:55:58] <module>(54) -- service-name running at port: 9094
+WARNING: [11/May 21:55:58] _log(187) --  * Debugger is active!
+INFO: [11/May 21:55:58] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 21:56:03] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:56:03] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:56:03] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:56:03] __call__(75) -- No Service-Id
+INFO: [11/May 21:56:03] _log(187) -- 127.0.0.1 - - [11/May/2024 21:56:03] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+DEBUG: [11/May 21:56:06] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 21:56:06] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 21:56:06] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://localhost:5173
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:5173/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 21:56:06] __call__(75) -- No Service-Id
+INFO: [11/May 21:56:06] _log(187) -- 127.0.0.1 - - [11/May/2024 21:56:06] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 21:58:39] _log(187) --  * Detected change in '/Users/jonathanariasgarcia/Dev/ipn/BackendSIGI/Oauth/app.py', reloading
+INFO: [11/May 21:58:39] _log(187) --  * Restarting with stat
+INFO: [11/May 21:58:40] <module>(54) -- service-name running at port: 9094
+WARNING: [11/May 21:58:40] _log(187) --  * Debugger is active!
+INFO: [11/May 21:58:40] _log(187) --  * Debugger PIN: 207-394-764
+INFO: [11/May 21:58:47] <module>(54) -- service-name running at port: 9094
+INFO: [11/May 21:58:47] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 21:58:47] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 21:58:47] _log(187) --  * Restarting with stat
+INFO: [11/May 21:58:48] <module>(54) -- service-name running at port: 9094
+WARNING: [11/May 21:58:48] _log(187) --  * Debugger is active!
+INFO: [11/May 21:58:48] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 22:02:21] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 22:02:21] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 22:02:21] __call__(67) -- headers: Host: localhost:9094
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: access-control-allow-origin,authorization,content-type,service-id,service-name
+Origin: http://127.0.0.1:5500
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:5500/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-MX,es;q=0.9,en-US;q=0.8,en;q=0.7,es-419;q=0.6
+
+
+ERROR: [11/May 22:02:21] __call__(75) -- No Service-Id
+INFO: [11/May 22:02:21] _log(187) -- 127.0.0.1 - - [11/May/2024 22:02:21] "[31m[1mOPTIONS /service/api/auth/v1 HTTP/1.1[0m" 400 -
+INFO: [11/May 22:13:11] <module>(54) -- service-name running at port: 9094
+INFO: [11/May 22:13:11] _log(187) -- [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:9094
+INFO: [11/May 22:13:11] _log(187) -- [33mPress CTRL+C to quit[0m
+INFO: [11/May 22:13:11] _log(187) --  * Restarting with stat
+INFO: [11/May 22:13:11] <module>(54) -- service-name running at port: 9094
+WARNING: [11/May 22:13:11] _log(187) --  * Debugger is active!
+INFO: [11/May 22:13:11] _log(187) --  * Debugger PIN: 207-394-764
+DEBUG: [11/May 22:13:14] __call__(60) -- Authorization middleware accessed.
+INFO: [11/May 22:13:14] __call__(65) -- URL accessed: http://localhost:9094/service/api/auth/v1
+DEBUG: [11/May 22:13:14] __call__(67) -- headers: Content-Length: 56
+Accept-Encoding: gzip, deflate, br
+Accept: */*
+User-Agent: Thunder Client (https://www.thunderclient.com)
+Service-Id: service-id-api
+Service-Name: service-name
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Host: localhost:9094
+Connection: close
+
+
+DEBUG: [11/May 22:13:14] __call__(92) -- Headers validated successfully
+DEBUG: [11/May 22:13:14] app_login_request_post(74) -- Hola jagorax@gmail.com desde flask
+INFO: [11/May 22:13:16] _log(187) -- 127.0.0.1 - - [11/May/2024 22:13:16] "[35m[1mPOST /service/api/auth/v1 HTTP/1.1[0m" 500 -

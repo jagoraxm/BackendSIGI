@@ -1,5 +1,5 @@
 # python modules
-from flask_openapi3 import Info, HTTPBearer, OpenAPI
+from flask_openapi3 import Info, OpenAPI
 from werkzeug.utils import redirect
 
 from flask_cors import CORS
