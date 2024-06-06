@@ -19,17 +19,18 @@ def register():
     username = request.form.get('username', None)
     email = request.form.get('email', None)
     password = request.form.get('password', None)
+    completeName = request.form.get('completeName', None)
     
     if username is None or password is None or email is None:
         return jsonify({"msg": "Missing username, password, or email"}), 400
     
     if User.find_one(username=username) is not None:    # Checking if the username already exists
-        return jsonify({"msg": "Username already exists"}), 400
+        return jsonify({"msg": "User already exists"}), 400
     
     if User.find_one(email=email) is not None:  # Checking if the email already exists
-        return jsonify({"msg": "Email already exists"}), 400
+        return jsonify({"msg": "User already exists"}), 400
     
-    user = User(username=username, password=password, email=email)
+    user = User(username=username, password=password, email=email, completeName=completeName, active=False)
     user.save()
     
     return jsonify({'result': 'ok'}), 201
@@ -46,6 +47,8 @@ def login():
     if user is None or not check_password_hash(user.password, password):  # Password verification
         return jsonify({"msg": "Bad username or password"}), 401
 
+    if user.active == False:
+        return jsonify({"msg": "User inactive"}), 401
     # Convert the ObjectId to a string
     user_id_str = str(user.id)
 
@@ -75,7 +78,8 @@ def logout():
 @jwt_required()
 def update_profile():
     new_username = request.form.get('new_username', None)
-
+    new_completeName = request.form.get('new_completeName', None)
+    
     current_identity = get_jwt_identity()
 
     current_user = User.find_one(id=ObjectId(current_identity))
@@ -85,6 +89,7 @@ def update_profile():
             return jsonify({"msg": "Desired username has already been taken"}), 400
 
         current_user.username = new_username
+    current_user.completeName = new_completeName
 
     current_user.save()
 
