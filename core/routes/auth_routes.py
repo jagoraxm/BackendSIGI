@@ -30,7 +30,7 @@ def register():
     if User.find_one(email=email) is not None:  # Checking if the email already exists
         return jsonify({"msg": "User already exists"}), 400
     
-    user = User(username=username, password=password, email=email, completeName=completeName, active=False)
+    user = User(username=username, password=password, email=email, completeName=completeName, active=False, rol=["su"])
     user.save()
     
     return jsonify({'result': 'ok'}), 201
@@ -52,7 +52,12 @@ def login():
     # Convert the ObjectId to a string
     user_id_str = str(user.id)
 
-    return jsonify(access_token=create_access_token(identity=user_id_str)), 200
+    dataUser = {
+        "access_token": create_access_token(identity=user_id_str),
+        "rol": user.rol,
+        "email": user.email
+    }
+    return jsonify(dataUser), 200
 
 
 

@@ -1,4 +1,4 @@
-from mongoengine import Document, StringField, DateTimeField, signals, BooleanField
+from mongoengine import Document, StringField, DateTimeField, signals, BooleanField, ListField
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -8,6 +8,7 @@ class User(Document):
     email = StringField(required=True, unique=True)
     completeName = StringField(required=False)
     active = BooleanField(required=True)
+    rol = ListField(StringField()) # something like ["escuelas", "controlGestion", "ipn", "sep", "su", "coordinador"]
     created_at = DateTimeField(default=datetime.utcnow)
     updated_at = DateTimeField(default=datetime.utcnow)
 
