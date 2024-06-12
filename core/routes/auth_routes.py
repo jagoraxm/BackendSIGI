@@ -5,8 +5,11 @@ from core.models.user import User
 from mongoengine import connect
 from bson import ObjectId
 from os import environ
+from flask_cors import CORS
 
 bp = Blueprint('user_routes', __name__)
+cors = CORS()
+cors.init_app(bp, resources={r"/*": {"origins": "*", "supports_credentials": False}})
 
 mongo_url = environ.get('MONGO_URL', 'mongodb://localhost:27017')
 database_name = environ.get('MONGO_DB', 'ggame')
@@ -48,12 +51,12 @@ def login():
         return jsonify({"msg": "Bad username or password"}), 401
 
     if user.active == False:
-        return jsonify({"msg": "User inactive"}), 401
+        return jsonify({"msg": "Inactive user"}), 401
     # Convert the ObjectId to a string
     user_id_str = str(user.id)
 
     dataUser = {
-        "access_token": create_access_token(identity=user_id_str),
+        "token": create_access_token(identity=user_id_str),
         "rol": user.rol,
         "email": user.email
     }
