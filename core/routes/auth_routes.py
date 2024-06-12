@@ -9,7 +9,7 @@ from flask_cors import CORS
 
 bp = Blueprint('user_routes', __name__)
 cors = CORS()
-cors.init_app(bp, resources={r"/*": {"origins": "*", "supports_credentials": False}})
+cors.init_app(bp, resources={r"*": {"origins": "*"}})
 
 mongo_url = environ.get('MONGO_URL', 'mongodb://localhost:27017')
 database_name = environ.get('MONGO_DB', 'ggame')
