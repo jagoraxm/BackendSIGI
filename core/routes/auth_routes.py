@@ -2,6 +2,7 @@ from flask import Blueprint, request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 from werkzeug.security import check_password_hash, generate_password_hash
 from core.models.user import User
+from core.models.notification import Notification
 from mongoengine import connect
 from bson import ObjectId
 from os import environ
@@ -46,6 +47,7 @@ def login():
     password = request.form.get('password', None)
 
     user = User.find_one(username=username)
+    notif = Notification.find_one()
 
     if user is None or not check_password_hash(user.password, password):  # Password verification
         return jsonify({"msg": "Bad username or password"}), 401
@@ -58,7 +60,11 @@ def login():
     dataUser = {
         "token": create_access_token(identity=user_id_str),
         "rol": user.rol,
-        "email": user.email
+        "email": user.email,
+        "notification": {
+            "title": notif.title,
+            "description": notif.description
+        }
     }
     return jsonify(dataUser), 200
 
@@ -102,3 +108,35 @@ def update_profile():
     current_user.save()
 
     return jsonify({"msg": "Profile updated successfully!"}), 200
+
+
+
+@bp.route('/notifications', methods=['GET'])
+@jwt_required()  # Verify that the user is logged in
+def notifications():
+    identity = get_jwt_identity()
+    user = Notification.find_one(id=ObjectId(identity))
+    if not user:
+        return jsonify({"msg": "User not found"}), 404
+    return jsonify({"username": user.username, "email": user.email}), 200
+
+
+@bp.route('/notifications', methods=['POST'])
+@jwt_required()  # Verify that the user is logged in
+def notification():
+    title = request.form.get('title', None)
+    description = request.form.get('description', None)
+    #action = request.form.get('action', None)
+    priority = request.form.get('priority', None)
+    active = request.form.get('active', None)
+    
+    if title is None or description is None or priority is None:
+        return jsonify({"msg": "Missing field in request"}), 400
+    
+    if Notification.find_one(title=title) is not None:    # Checking if the username already exists
+        return jsonify({"msg": "Notification exists"}), 400
+    
+    notif = Notification(title=title, description=description, priority=priority, active=True)
+    notif.save()
+    
+    return jsonify({'result': 'ok'}), 201
