@@ -62,8 +62,8 @@ def login():
         "rol": user.rol,
         "email": user.email,
         "notification": {
-            "title": ("",notif.title)[notif is None],
-            "description": ("",notif.description)[notif is None]
+            "title": (notif.title, "")[notif is None],
+            "description": (notif.description, "")[notif is None]
         }
     }
     return jsonify(dataUser), 200
