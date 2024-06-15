@@ -60,7 +60,10 @@ def login():
     if notif is None:
         notification = ""
     else:
-        notification = "{'title': {notif.title},'description': {notif.description}}"
+        notification = {
+            "title": notif.title,
+            "description": notif.description
+        }
 
     dataUser = {
         "token": create_access_token(identity=user_id_str),
