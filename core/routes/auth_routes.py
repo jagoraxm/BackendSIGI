@@ -57,14 +57,16 @@ def login():
     # Convert the ObjectId to a string
     user_id_str = str(user.id)
 
+    if notif is None:
+        notification = ""
+    else:
+        notification = "{'title': {notif.title},'description': {notif.description}}"
+
     dataUser = {
         "token": create_access_token(identity=user_id_str),
         "rol": user.rol,
         "email": user.email,
-        "notification": {
-            "title": (notif.title, "")[notif is None],
-            "description": (notif.description, "")[notif is None]
-        }
+        "notification": notification
     }
     return jsonify(dataUser), 200
 
