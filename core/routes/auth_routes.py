@@ -70,6 +70,7 @@ def login():
         "rol": user.rol,
         "email": user.email,
         "notification": notification
+
     }
     return jsonify(dataUser), 200
 
