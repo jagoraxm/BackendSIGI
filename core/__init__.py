@@ -9,7 +9,7 @@ load_dotenv()
 
 app = Flask(__name__)
 app.config['JWT_SECRET_KEY'] = environ.get('JWT_SECRET_KEY', 'super-secret')
-app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(minutes=15) # but days=30
+app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(days=1) # but days=30
 
 # Setup the Flask-JWT-Extended extension
 jwt = JWTManager(app)
