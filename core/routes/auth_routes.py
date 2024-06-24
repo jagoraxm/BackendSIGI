@@ -4,6 +4,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from core.models.user import User
 from core.models.notification import Notification
 from core.models.oficios import Oficios
+from core.models.registro import Registro
 from mongoengine import connect
 from bson import ObjectId
 from os import environ
@@ -40,6 +41,20 @@ def register():
     
     return jsonify({'result': 'ok'}), 201
 
+@bp.route('/registerEmail', methods=['POST'])
+def registerEmail():
+    email = request.form.get('email', None)
+    
+    if email is None:
+        return jsonify({"msg": "Missing email"}), 400
+    
+    if Registro.find_one(email=email) is not None:    # Checking if the username already exists
+        return jsonify({"msg": "Correo electrónico ya existe"}), 400
+    
+    regis = Registro(email=email, active=False)
+    regis.save()
+    
+    return jsonify({'result': 'ok'}), 201
 
 
 @bp.route('/login', methods=['POST'])
