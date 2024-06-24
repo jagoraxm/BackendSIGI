@@ -160,7 +160,7 @@ def oficios():
         return jsonify({"msg": "Missing field in request"}), 400
     
     if Oficios.find_one(oficio=oficio) is not None:    # Checking if the username already exists
-        return jsonify({"msg": "Oficio exists"}), 400
+        return jsonify({"msg": "Oficio ya existe"}), 400
     
     ofic = Oficios(oficio=oficio, fechaOficio=fechaOficio)
     ofic.save()
