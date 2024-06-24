@@ -197,5 +197,74 @@ def oficios():
         oficcs.append({
             "oficio": off.oficio, "folio": off.folio, "fechaOficio": off.fechaOficio, "estatus": off.estatus
         })
-    return jsonify({"data": oficcs})
-#jsonify({"oficio": ofic.oficio, "folio": ofic.folio, "fechaOficio": ofic.fechaOficio, "estatus": ofic.estatus}), 200
+    return jsonify({"data": oficcs}), 200
+
+@bp.route('/oficiosM2', methods=['GET'])
+@jwt_required()  # Verify that the user is logged in
+def oficiosM2():
+    oficcs = []
+    identity = get_jwt_identity()
+    ofic = Oficios.objects(estatus='Pendiente de Folio')
+    if not ofic:
+        return jsonify({"msg": "Oficios no encontrados"}), 404
+    for off in ofic:
+        oficcs.append({
+            "oficio": off.oficio, "folio": off.folio, "fechaOficio": off.fechaOficio, "estatus": off.estatus
+        })
+    return jsonify({"data": oficcs}), 200
+
+@bp.route('/oficiosM3', methods=['GET'])
+@jwt_required()  # Verify that the user is logged in
+def oficiosM3():
+    oficcs = []
+    identity = get_jwt_identity()
+    ofic = Oficios.objects(estatus='En Evaluacion')
+    if not ofic:
+        return jsonify({"msg": "Oficios no encontrados"}), 404
+    for off in ofic:
+        oficcs.append({
+            "oficio": off.oficio, "folio": off.folio, "fechaOficio": off.fechaOficio, "estatus": off.estatus
+        })
+    return jsonify({"data": oficcs}), 200
+
+@bp.route('/oficiosM4', methods=['GET'])
+@jwt_required()  # Verify that the user is logged in
+def oficiosM4():
+    oficcs = []
+    identity = get_jwt_identity()
+    ofic = Oficios.objects(estatus='En Evaluacion Externa')
+    if not ofic:
+        return jsonify({"msg": "Oficios no encontrados"}), 404
+    for off in ofic:
+        oficcs.append({
+            "oficio": off.oficio, "folio": off.folio, "fechaOficio": off.fechaOficio, "estatus": off.estatus
+        })
+    return jsonify({"data": oficcs}), 200
+
+@bp.route('/oficiosM5', methods=['GET'])
+@jwt_required()  # Verify that the user is logged in
+def oficiosM5():
+    oficcs = []
+    identity = get_jwt_identity()
+    ofic = Oficios.objects(estatus='Observado')
+    if not ofic:
+        return jsonify({"msg": "Oficios no encontrados"}), 404
+    for off in ofic:
+        oficcs.append({
+            "oficio": off.oficio, "folio": off.folio, "fechaOficio": off.fechaOficio, "estatus": off.estatus
+        })
+    return jsonify({"data": oficcs}), 200
+
+@bp.route('/oficiosM6', methods=['GET'])
+@jwt_required()  # Verify that the user is logged in
+def oficiosM6():
+    oficcs = []
+    identity = get_jwt_identity()
+    ofic = Oficios.objects(estatus='Elaboracion Respuesta P/N')
+    if not ofic:
+        return jsonify({"msg": "Oficios no encontrados"}), 404
+    for off in ofic:
+        oficcs.append({
+            "oficio": off.oficio, "folio": off.folio, "fechaOficio": off.fechaOficio, "estatus": off.estatus
+        })
+    return jsonify({"data": oficcs}), 200
