@@ -177,4 +177,5 @@ def oficios():
     ofic = Oficios.objects(estatus='Carga Inicial')
     if not ofic:
         return jsonify({"msg": "Oficios no encontrados"}), 404
-    return jsonify({"oficio": ofic.oficio, "folio": ofic.folio, "fechaOficio": ofic.fechaOficio, "estatus": ofic.estatus}), 200
+    return ofic
+#jsonify({"oficio": ofic.oficio, "folio": ofic.folio, "fechaOficio": ofic.fechaOficio, "estatus": ofic.estatus}), 200
