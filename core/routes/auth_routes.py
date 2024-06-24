@@ -128,6 +128,7 @@ def notifications():
     return jsonify({"username": user.username, "email": user.email}), 200
 
 
+
 @bp.route('/notifications', methods=['POST'])
 @jwt_required()  # Verify that the user is logged in
 def notification():
@@ -157,6 +158,9 @@ def oficios():
     
     if oficio is None or fechaOficio is None:
         return jsonify({"msg": "Missing field in request"}), 400
+    
+    if Oficios.find_one(oficio=oficio) is not None:    # Checking if the username already exists
+        return jsonify({"msg": "Oficio exists"}), 400
     
     ofic = Oficios(oficio=oficio, fechaOficio=fechaOficio)
     ofic.save()
