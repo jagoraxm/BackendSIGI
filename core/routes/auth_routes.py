@@ -174,7 +174,7 @@ def addoficios():
 @jwt_required()  # Verify that the user is logged in
 def oficios():
     identity = get_jwt_identity()
-    ofic = Oficios.find_one(id=ObjectId(identity))
+    ofic = Oficios.objects(estatus='Carga Inicial')
     if not ofic:
-        return jsonify({"msg": "User not found"}), 404
+        return jsonify({"msg": "Oficios no encontrados"}), 404
     return jsonify({"oficio": ofic.oficio, "folio": ofic.folio, "fechaOficio": ofic.fechaOficio, "estatus": ofic.estatus}), 200
