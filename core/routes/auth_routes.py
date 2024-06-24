@@ -173,9 +173,14 @@ def addoficios():
 @bp.route('/oficios', methods=['GET'])
 @jwt_required()  # Verify that the user is logged in
 def oficios():
+    oficcs = []
     identity = get_jwt_identity()
     ofic = Oficios.objects(estatus='Carga Inicial')
     if not ofic:
         return jsonify({"msg": "Oficios no encontrados"}), 404
-    return ofic
+    for off in ofic:
+        oficcs.append({
+            "oficio": off.oficio, "folio": off.folio, "fechaOficio": off.fechaOficio, "estatus": off.estatus
+        })
+    return jsonify({"data": oficcs})
 #jsonify({"oficio": ofic.oficio, "folio": ofic.folio, "fechaOficio": ofic.fechaOficio, "estatus": ofic.estatus}), 200
