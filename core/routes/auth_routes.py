@@ -152,7 +152,7 @@ def notification():
 
 @bp.route('/addOficio', methods=['POST'])
 @jwt_required()  # Verify that the user is logged in
-def oficios():
+def addoficios():
     folio = request.form.get('folio', None)
     oficio = request.form.get('oficio', None)
     estatus = request.form.get('estatus')
@@ -168,3 +168,13 @@ def oficios():
     ofic.save()
     
     return jsonify({'result': 'ok'}), 201
+
+
+@bp.route('/oficios', methods=['GET'])
+@jwt_required()  # Verify that the user is logged in
+def oficios():
+    identity = get_jwt_identity()
+    ofic = Oficios.find_one(id=ObjectId(identity))
+    if not ofic:
+        return jsonify({"msg": "User not found"}), 404
+    return jsonify({"oficio": ofic.oficio, "folio": ofic.folio, "fechaOficio": ofic.fechaOficio, "estatus": ofic.estatus}), 200
