@@ -153,16 +153,18 @@ def notification():
 @bp.route('/addOficio', methods=['POST'])
 @jwt_required()  # Verify that the user is logged in
 def oficios():
+    folio = request.form.get('folio', None)
     oficio = request.form.get('oficio', None)
+    estatus = request.form.get('estatus')
     fechaOficio = request.form.get('fechaOficio', None)
     
-    if oficio is None or fechaOficio is None:
-        return jsonify({"msg": "Missing field in request"}), 400
+    if oficio is None or fechaOficio is None or folio is None:
+        return jsonify({"msg": "Falta un campo requerido"}), 400
     
     if Oficios.find_one(oficio=oficio) is not None:    # Checking if the username already exists
         return jsonify({"msg": "Oficio ya existe"}), 400
     
-    ofic = Oficios(oficio=oficio, fechaOficio=fechaOficio)
+    ofic = Oficios(oficio=oficio, fechaOficio=fechaOficio, folio=folio, estatus="Carga Inicial")
     ofic.save()
     
     return jsonify({'result': 'ok'}), 201

@@ -5,6 +5,7 @@ class Oficios(Document):
     oficio = StringField(required=True, unique=True)
     folio = StringField(required=True)
     fechaOficio = StringField(required=True)
+    estatus = StringField(required=True)
     created_at = DateTimeField(default=datetime.utcnow)
     updated_at = DateTimeField(default=datetime.utcnow)
 
