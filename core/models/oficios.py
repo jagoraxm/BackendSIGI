@@ -3,6 +3,7 @@ from datetime import datetime
 
 class Oficios(Document):
     oficio = StringField(required=True, unique=True)
+    folio = StringField(required=True)
     fechaOficio = StringField(required=True)
     created_at = DateTimeField(default=datetime.utcnow)
     updated_at = DateTimeField(default=datetime.utcnow)
