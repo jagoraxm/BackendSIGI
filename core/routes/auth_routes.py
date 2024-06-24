@@ -3,6 +3,7 @@ from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identi
 from werkzeug.security import check_password_hash, generate_password_hash
 from core.models.user import User
 from core.models.notification import Notification
+from core.models.oficios import Oficios
 from mongoengine import connect
 from bson import ObjectId
 from os import environ
@@ -144,5 +145,20 @@ def notification():
     
     notif = Notification(title=title, description=description, priority=priority, active=True)
     notif.save()
+    
+    return jsonify({'result': 'ok'}), 201
+
+
+@bp.route('/addOficio', methods=['POST'])
+@jwt_required()  # Verify that the user is logged in
+def oficios():
+    oficio = request.form.get('oficio', None)
+    fechaOficio = request.form.get('fechaOficio', None)
+    
+    if oficio is None or fechaOficio is None:
+        return jsonify({"msg": "Missing field in request"}), 400
+    
+    ofic = Oficios(oficio=oficio, fechaOficio=fechaOficio)
+    ofic.save()
     
     return jsonify({'result': 'ok'}), 201
