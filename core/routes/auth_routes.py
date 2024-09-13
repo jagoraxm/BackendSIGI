@@ -209,8 +209,10 @@ def update_oficio():
     oficio = request.form.get('oficio', None)
     folio = request.form.get('folio', None)
     
-    current_oficio = Oficio.find_one(oficio=oficio)
+    current_identity = get_jwt_identity()
 
+    current_user = Oficio.find_one(id=ObjectId(current_identity))
+    
     if oficio is not None and folio is not None:
         if Oficio.find_one(oficio=oficio):
             return jsonify({"msg": "Desired 'oficio' has already been taken"}), 400
