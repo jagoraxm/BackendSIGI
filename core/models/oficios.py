@@ -1,4 +1,4 @@
-from mongoengine import Document, StringField, DateTimeField, signals
+from mongoengine import Document, StringField, DateTimeField, signals, BinaryField, ListField
 from datetime import datetime
 
 class Oficios(Document):
@@ -6,9 +6,11 @@ class Oficios(Document):
     folio = StringField(required=True)
     fechaOficio = StringField(required=True)
     estatus = StringField(required=True)
+    imagen_name = ListField(StringField(), required=True)
+    imagen = ListField(BinaryField(), required=True)
     created_at = DateTimeField(default=datetime.utcnow)
     updated_at = DateTimeField(default=datetime.utcnow)
-
+    
     def save(self, *args, **kwargs):
         self.updated_at = datetime.utcnow()
         return super(Oficios, self).save(*args, **kwargs)

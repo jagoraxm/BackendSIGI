@@ -1,6 +1,9 @@
+from tkinter import *
+from PIL import ImageTk, Image
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 from werkzeug.security import check_password_hash, generate_password_hash
+from werkzeug.utils import secure_filename
 from core.models.user import User
 from core.models.notification import Notification
 from core.models.oficios import Oficios
@@ -172,6 +175,21 @@ def addoficios():
     oficio = request.form.get('oficio', None)
     estatus = request.form.get('estatus')
     fechaOficio = request.form.get('fechaOficio', None)
+    #imagen_url = request.files.get('imagen_url', None)
+    
+    archivos = request.files.getlist('imagen_url')
+    nombres_archivos = []
+    contenidos_imagenes = []
+
+    for archivo in archivos:
+        if archivo.filename == '':
+            continue
+
+        nombre_archivo = secure_filename(archivo.filename)
+        contenido_imagen = archivo.read()
+
+        nombres_archivos.append(nombre_archivo)
+        contenidos_imagenes.append(contenido_imagen)
     
     if oficio is None or fechaOficio is None or folio is None:
         return jsonify({"msg": "Falta un campo requerido"}), 400
@@ -179,11 +197,28 @@ def addoficios():
     if Oficios.find_one(oficio=oficio) is not None:    # Checking if the username already exists
         return jsonify({"msg": "Oficio ya existe"}), 400
     
-    ofic = Oficios(oficio=oficio, fechaOficio=fechaOficio, folio=folio, estatus="Carga Inicial")
+    ofic = Oficios(oficio=oficio, fechaOficio=fechaOficio, folio=folio, estatus="Carga Inicial", imagen_name=nombres_archivos, imagen=contenidos_imagenes)
     ofic.save()
     
     return jsonify({'result': 'ok'}), 201
 
+@bp.route('/updateOficio', methods=['PATCH'])
+@jwt_required()
+def update_oficio():
+    
+    oficio = request.form.get('oficio', None)
+    folio = request.form.get('folio', None)
+    
+    current_oficio = Oficio.find_one(oficio=oficio)
+
+    if oficio is not None and folio is not None:
+        if Oficio.find_one(oficio=oficio):
+            return jsonify({"msg": "Desired 'oficio' has already been taken"}), 400
+        current_oficio.username = new_username
+
+    current_oficio.save()
+
+    return jsonify({"msg": "'Oficio' updated successfully!"}), 200
 
 @bp.route('/oficios', methods=['GET'])
 @jwt_required()  # Verify that the user is logged in
