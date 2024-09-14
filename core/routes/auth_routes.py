@@ -202,7 +202,8 @@ def addoficios():
     
     return jsonify({'result': 'ok'}), 201
 
-@bp.route('/updateOficio', methods=['PATCH'])
+#TODO
+@bp.route('/updateOficio', methods=['PATCH']) 
 @jwt_required()
 def update_oficio():
     
@@ -232,7 +233,12 @@ def oficios():
         return jsonify({"msg": "Oficios no encontrados"}), 404
     for off in ofic:
         oficcs.append({
-            "oficio": off.oficio, "folio": off.folio, "fechaOficio": off.fechaOficio, "estatus": off.estatus
+            "oficio": off.oficio, 
+            "folio": off.folio, 
+            "fechaOficio": off.fechaOficio, 
+            "estatus": off.estatus,
+            "imagen": off.imagen,
+            "imagen_name": off.imagen_name
         })
     return jsonify({"data": oficcs}), 200
 
