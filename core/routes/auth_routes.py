@@ -1,5 +1,5 @@
-#from tkinter import *
-from PIL import ImageTk, Image
+# from tkinter import *
+# from PIL import ImageTk, Image
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 from werkzeug.security import check_password_hash, generate_password_hash
