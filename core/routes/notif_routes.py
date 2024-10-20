@@ -14,86 +14,27 @@ from os import environ
 from flask_cors import CORS
 import base64
 
-bp_auth = Blueprint('user_routes', __name__)
+bp_notif = Blueprint('notif_routes', __name__)
 cors = CORS()
-cors.init_app(bp_auth, resources={r"*": {"origins": "*"}})
+cors.init_app(bp_notif, resources={r"*": {"origins": "*"}})
 
 mongo_url = environ.get('MONGO_URL', 'mongodb://localhost:27017')
 database_name = environ.get('MONGO_DB', 'ggame')
 
 connect(db=database_name, host=mongo_url, alias="default")
 
-@bp_auth.route('/login', methods=['POST'])
-def login():
-    username = request.form.get('username', None)
-    password = request.form.get('password', None)
-
-    user = User.find_one(username=username)
-    notif = Notification.find_one()
-
-    if user is None or not check_password_hash(user.password, password):  # Password verification
-        return jsonify({"msg": "Bad username or password"}), 401
-
-    if user.active == False:
-        return jsonify({"msg": "Inactive user"}), 401
-    # Convert the ObjectId to a string
-    user_id_str = str(user.id)
-
-    if notif is None:
-        notification = ""
-    else:
-        notification = {
-            "title": notif.title,
-            "description": notif.description
-        }
-
-    dataUser = {
-        "token": create_access_token(identity=user_id_str),
-        "rol": user.rol,
-        "email": user.email,
-        "notification": notification,
-        "dataExt": {
-            "text":"testing"
-        }
-
-    }
-    return jsonify(dataUser), 200
-
-@bp_auth.route('/checkAuth', methods=['GET'])
+@bp_notif.route('/notifications', methods=['GET'])
 @jwt_required()  # Verify that the user is logged in
-def check_auth():
+def notifications():
     identity = get_jwt_identity()
-    user = User.find_one(id=ObjectId(identity))
+    user = Notification.find_one(id=ObjectId(identity))
     if not user:
         return jsonify({"msg": "User not found"}), 404
     return jsonify({"username": user.username, "email": user.email}), 200
 
-@bp_auth.route('/logout', methods=['POST'])
+@bp_notif.route('/notifications', methods=['POST'])
 @jwt_required()  # Verify that the user is logged in
-def logout():
-    return jsonify({"msg": "Successfully logged out"}), 200
-
-@bp_auth.route('/updateProfile', methods=['PATCH'])
-@jwt_required()
-def update_profile():
-    new_username = request.form.get('new_username', None)
-    new_completeName = request.form.get('new_completeName', None)
-    
-    current_identity = get_jwt_identity()
-
-    current_user = User.find_one(id=ObjectId(current_identity))
-
-    if new_username is not None:
-        if User.find_one(username=new_username):
-            return jsonify({"msg": "Desired username has already been taken"}), 400
-
-        current_user.username = new_username
-    current_user.completeName = new_completeName
-
-    current_user.save()
-
-    return jsonify({"msg": "Profile updated successfully!"}), 200
-
+def notification():
     title = request.form.get('title', None)
     description = request.form.get('description', None)
     #action = request.form.get('action', None)
