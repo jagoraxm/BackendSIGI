@@ -13,6 +13,9 @@ from bson import ObjectId
 from os import environ
 from flask_cors import CORS
 import base64
+from flask import Flask
+from flask_mail import Message
+from core import Mail  # Importar la instancia de Flask-Mail
 
 bp_reg = Blueprint('register_routes', __name__)
 cors = CORS()
@@ -76,3 +79,42 @@ def getRegisterEmail():
         })
     
     return jsonify({"data": regs}), 200
+
+@bp_reg.route('/validateRegister', methods=['POST'])
+def validateRegister():
+    email = request.form.get('email', None)
+    if email is None:
+        return jsonify({"msg": "Missing email"}), 400
+
+    reg = Registro.find_one(email=email)
+    if reg is None:
+        return jsonify({"msg": "Registro no encontrado"}), 404
+
+    reg.active = True
+    reg.save()
+
+    return jsonify({'result': 'ok'}), 200
+
+@bp_reg.route('/sendMailRegister', methods=['POST'])
+def sendMailRegister():
+    from core import mail  
+    email = request.form.get('email', None)
+    if email is None:
+        return jsonify({"msg": "Missing email"}), 400
+
+    try:
+        # Crear el mensaje de correo
+        msg = Message(
+            subject=u"Alta de cuenta SIGI",
+            sender="ipn.sigi@gmail.com",
+            recipients=[email],  # A quién enviar el correo
+            body=u"Este es el cuerpo del mensaje"      # Cuerpo del correo
+        )
+
+        # Enviar el correo
+        mail.send(msg)
+
+        return jsonify({"msg": "Correo enviado exitosamente"}), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
