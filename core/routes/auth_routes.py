@@ -12,6 +12,7 @@ from mongoengine import connect
 from bson import ObjectId
 from os import environ
 from flask_cors import CORS
+import base64
 
 bp = Blueprint('user_routes', __name__)
 cors = CORS()
@@ -232,13 +233,16 @@ def oficios():
     if not ofic:
         return jsonify({"msg": "Oficios no encontrados"}), 404
     for off in ofic:
+        # Si 'off.imagen' es un array de imágenes, lo convertimos a base64
+        imagenes_base64 = [base64.b64encode(imagen).decode('utf-8') if imagen else None for imagen in off.imagen]
+        # 'off.imagen_name' puede ser directamente serializable si es un array de strings
         oficcs.append({
             "oficio": off.oficio, 
             "folio": off.folio, 
             "fechaOficio": off.fechaOficio, 
             "estatus": off.estatus,
-            "imagen": off.imagen,
-            "imagen_name": off.imagen_name
+            "imagen": imagenes_base64,
+            "imagen_name": off.imagen_name  # Aquí asumimos que es un array de strings, lo que es serializable
         })
     return jsonify({"data": oficcs}), 200
 
