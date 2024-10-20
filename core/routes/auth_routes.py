@@ -89,7 +89,10 @@ def login():
         "token": create_access_token(identity=user_id_str),
         "rol": user.rol,
         "email": user.email,
-        "notification": notification
+        "notification": notification,
+        "dataExt": {
+            "text":"testing"
+        }
 
     }
     return jsonify(dataUser), 200
