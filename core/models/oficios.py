@@ -9,6 +9,7 @@ class Oficios(Document):
     imagen_name = ListField(StringField())
     imagen = ListField(BinaryField())
     imagen_path = ListField(StringField())  # Rutas completas de los archivos
+    imagen_historial = ListField(ListField(BinaryField()))  # Historial de imágenes
     created_at = DateTimeField(default=datetime.utcnow)
     updated_at = DateTimeField(default=datetime.utcnow)
     
