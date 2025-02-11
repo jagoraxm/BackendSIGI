@@ -147,7 +147,92 @@ def addoficiosFS():
     
     except Exception as e:
         return jsonify({"msg": "Error al procesar la solicitud.", "error": str(e)}), 500
+
+@bp_ofic.route('/avanzaOficio', methods=['POST'])
+@jwt_required()  # Verify that the user is logged in
+def avanzaOficio():
+    """Endpoint para insertar oficios
+    ---
+    tags:
+      - Ofic
+    """
+    try:
+        folio = request.form.get('folio')
+        oficio = request.form.get('oficio')
+        estatus = request.form.get('estatus')
+        
+        if not folio or not oficio or not estatus:
+            return jsonify({"msg": "Falta un campo requerido"}), 400
+
+        # Buscar el oficio por folio, estatus y oficio
+        oficio_existente = Oficios.find_one(folio=folio, estatus=estatus, oficio=oficio)
+        if not oficio_existente:
+            return jsonify({"msg": "Oficio no encontrado"}), 404
+
+        # Actualizar el estatus del oficio
+        oficio_existente.estatus = estatus
+        # Validar y cambiar el estatus según el valor actual
+        if oficio_existente.estatus == 'Carga Inicial':
+            oficio_existente.estatus = 'Pendiente de Folio'
+        elif oficio_existente.estatus == 'Pendiente de Folio':
+            oficio_existente.estatus = 'En Evaluacion'
+        elif oficio_existente.estatus == 'En Evaluacion':
+            oficio_existente.estatus = 'En Evaluacion Externa'
+        elif oficio_existente.estatus == 'En Evaluacion Externa':
+            oficio_existente.estatus = 'Observado'
+        elif oficio_existente.estatus == 'Observado':
+            oficio_existente.estatus = 'Elaboracion Respuesta P/N'
+        else:
+            return jsonify({'result': 'error','msg': 'Estatus no válido'}), 400
+        oficio_existente.save()
+        
+        return jsonify({'result': 'ok', 'oficio': oficio_existente.to_json()}), 200
     
+    except Exception as e:
+        return jsonify({"msg": "Error al procesar la solicitud.", "error": str(e)}), 500
+
+@bp_ofic.route('/regresaOficio', methods=['POST'])
+@jwt_required()  # Verify that the user is logged in
+def regresaOficio():
+    """Endpoint para retroceder el estatus de oficios
+    ---
+    tags:
+        - Ofic
+    """
+    try:
+        folio = request.form.get('folio')
+        oficio = request.form.get('oficio')
+        estatus = request.form.get('estatus')
+        
+        if not folio or not oficio or not estatus:
+            return jsonify({"msg": "Falta un campo requerido"}), 400
+
+        # Buscar el oficio por folio, estatus y oficio
+        oficio_existente = Oficios.find_one(folio=folio, estatus=estatus, oficio=oficio)
+        if not oficio_existente:
+            return jsonify({"msg": "Oficio no encontrado"}), 404
+
+        # Validar y cambiar el estatus según el valor actual
+        if oficio_existente.estatus == 'Elaboracion Respuesta P/N':
+            oficio_existente.estatus = 'Observado'
+        elif oficio_existente.estatus == 'Observado':
+            oficio_existente.estatus = 'En Evaluacion Externa'
+        elif oficio_existente.estatus == 'En Evaluacion Externa':
+            oficio_existente.estatus = 'En Evaluacion'
+        elif oficio_existente.estatus == 'En Evaluacion':
+            oficio_existente.estatus = 'Pendiente de Folio'
+        elif oficio_existente.estatus == 'Pendiente de Folio':
+            oficio_existente.estatus = 'Carga Inicial'
+        else:
+            return jsonify({'result': 'error', 'msg': 'Estatus no válido'}), 400
+
+        oficio_existente.save()
+        
+        return jsonify({'result': 'ok', 'oficio': oficio_existente.to_json()}), 200
+    
+    except Exception as e:
+        return jsonify({"msg": "Error al procesar la solicitud.", "error": str(e)}), 500
+
 #TODO
 @bp_ofic.route('/updateOficio', methods=['PATCH']) 
 @jwt_required()
