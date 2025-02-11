@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y \
 
 # Actualizar pip a la última versión
 RUN pip install --upgrade pip
+RUN python --version
 
 RUN pip cache purge
 # Install project dependencies
@@ -26,7 +27,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Default port to use if one isn't available in the environment
 ENV PORT=5000
 
-RUN python --version
 
 # Set flask to run in production or development based on availability of PORT in environment
 ENV FLASK_ENV=${FLASK_ENV:-development}
