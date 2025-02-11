@@ -281,7 +281,8 @@ def oficios():
             "fechaOficio": off.fechaOficio, 
             "estatus": off.estatus,
             "imagen": imagenes_base64,
-            "imagen_name": off.imagen_name  # Aquí asumimos que es un array de strings, lo que es serializable
+            "imagen_name": off.imagen_name, # Aquí asumimos que es un array de strings, lo que es serializable
+            "imagen_path": off.imagen_path  # Aquí asumimos que es un array de strings, lo que es serializable
         })
     return jsonify({"data": oficcs}), 200
 
