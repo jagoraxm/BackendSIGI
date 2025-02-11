@@ -16,7 +16,7 @@ Flask-JWT-Extended==4.6.0
 Flask-Mail==0.10.0
 gunicorn==23.0.0
 h11==0.14.0
-h2==4.2.0
+h2==4.1.0
 hpack==4.1.0
 Hypercorn==0.17.3
 hyperframe==6.1.0
