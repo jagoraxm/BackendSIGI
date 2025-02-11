@@ -29,6 +29,11 @@ connect(db=database_name, host=mongo_url, alias="default")
 
 @bp_reg.route('/register', methods=['POST'])
 def register():
+    """Endpoint para registro de usuarios
+    ---
+    tags:
+      - Reg
+    """
     username = request.form.get('username', None)
     email = request.form.get('email', None)
     password = request.form.get('password', None)
@@ -50,6 +55,11 @@ def register():
 
 @bp_reg.route('/registerEmail', methods=['POST'])
 def registerEmail():
+    """Endpoint para registro de emails
+    ---
+    tags:
+      - Reg
+    """
     email = request.form.get('email', None)
     
     if email is None:
@@ -68,6 +78,11 @@ def registerEmail():
 
 @bp_reg.route('/getRegisterEmail', methods=['GET'])
 def getRegisterEmail():
+    """Endpoint para...
+    ---
+    tags:
+      - Reg
+    """
     regs = []
     registers = Registro.objects(active=False)
     if not registers:
@@ -82,6 +97,11 @@ def getRegisterEmail():
 
 @bp_reg.route('/validateRegister', methods=['POST'])
 def validateRegister():
+    """Endpoint para validar registros
+    ---
+    tags:
+      - Reg
+    """
     email = request.form.get('email', None)
     if email is None:
         return jsonify({"msg": "Missing email"}), 400
@@ -97,6 +117,11 @@ def validateRegister():
 
 @bp_reg.route('/sendMailRegister', methods=['POST'])
 def sendMailRegister():
+    """Endpoint para eviar correos
+    ---
+    tags:
+      - Reg
+    """
     from core import mail  
     email = request.form.get('email', None)
     if email is None:

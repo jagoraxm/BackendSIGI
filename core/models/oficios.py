@@ -6,8 +6,9 @@ class Oficios(Document):
     folio = StringField(required=True)
     fechaOficio = StringField(required=True)
     estatus = StringField(required=True)
-    imagen_name = ListField(StringField(), required=True)
-    imagen = ListField(BinaryField(), required=True)
+    imagen_name = ListField(StringField())
+    imagen = ListField(BinaryField())
+    imagen_path = ListField(StringField())  # Rutas completas de los archivos
     created_at = DateTimeField(default=datetime.utcnow)
     updated_at = DateTimeField(default=datetime.utcnow)
     
