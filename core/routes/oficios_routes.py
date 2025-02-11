@@ -244,8 +244,8 @@ def updateOficioFS():
     """
     try:
         folio = request.form.get('folio')
-        imagen_base64 = request.form.get('imagen_base64')
-
+        imagen_base64 = request.files.getlist('imagen_base64')
+        
         if not folio or not imagen_base64:
             return jsonify({"msg": "Falta un campo requerido"}), 400
 
@@ -255,16 +255,21 @@ def updateOficioFS():
             return jsonify({"msg": "Oficio no encontrado"}), 404
 
         # Decodificar la imagen base64
-        imagen_decodificada = base64.b64decode(imagen_base64)
+        # imagen_decodificada = base64.b64decode(imagen_base64)
 
-        # Subir la nueva imagen a Cloudinary
-        upload_result = cloudinary.uploader.upload(imagen_decodificada)
-        nueva_imagen_url = upload_result['secure_url']
+        # Subir archivos a Cloudinary y obtener URLs
+        nueva_imagen_url = []
+        for archivo in imagen_base64:
+            if archivo:
+                upload_result = cloudinary.uploader.upload(archivo)
+                print("upload_result --> ", upload_result)
+                nueva_imagen_url.append(upload_result['secure_url'])
+                print("imagenes_urls --> ", nueva_imagen_url)
 
         # Guardar la imagen anterior en el historial
         if not hasattr(oficio_existente, 'imagen_historial'):
             oficio_existente.imagen_historial = []
-        oficio_existente.imagen_historial.append(oficio_existente.imagen_path)
+        oficio_existente.imagen_historial = oficio_existente.imagen_path
 
         # Actualizar la imagen actual
         oficio_existente.imagen_path = nueva_imagen_url
