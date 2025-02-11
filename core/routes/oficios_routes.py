@@ -234,6 +234,47 @@ def regresaOficio():
         return jsonify({"msg": "Error al procesar la solicitud.", "error": str(e)}), 500
 
 #TODO
+@bp_ofic.route('/updateOficioFS', methods=['POST'])
+@jwt_required()
+def updateOficioFS():
+    """Endpoint para actualizar la imagen de un oficio
+    ---
+    tags:
+      - Ofic
+    """
+    try:
+        folio = request.form.get('folio')
+        imagen_base64 = request.form.get('imagen_base64')
+
+        if not folio or not imagen_base64:
+            return jsonify({"msg": "Falta un campo requerido"}), 400
+
+        # Buscar el oficio por folio
+        oficio_existente = Oficios.find_one(folio=folio)
+        if not oficio_existente:
+            return jsonify({"msg": "Oficio no encontrado"}), 404
+
+        # Decodificar la imagen base64
+        imagen_decodificada = base64.b64decode(imagen_base64)
+
+        # Subir la nueva imagen a Cloudinary
+        upload_result = cloudinary.uploader.upload(imagen_decodificada)
+        nueva_imagen_url = upload_result['secure_url']
+
+        # Guardar la imagen anterior en el historial
+        if not hasattr(oficio_existente, 'imagen_historial'):
+            oficio_existente.imagen_historial = []
+        oficio_existente.imagen_historial.append(oficio_existente.imagen_path)
+
+        # Actualizar la imagen actual
+        oficio_existente.imagen_path = nueva_imagen_url
+        oficio_existente.save()
+
+        return jsonify({'result': 'ok', 'nueva_imagen_url': nueva_imagen_url}), 200
+
+    except Exception as e:
+        return jsonify({"msg": "Error al procesar la solicitud.", "error": str(e)}), 500
+    
 @bp_ofic.route('/updateOficio', methods=['PATCH']) 
 @jwt_required()
 def update_oficio():
