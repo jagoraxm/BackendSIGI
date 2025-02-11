@@ -30,7 +30,7 @@ mistune==3.1.1
 mongoengine==0.29.1
 nodeenv==1.9.1
 packaging==24.2
-pillow==11.0.0
+pillow==10.4.0
 platformdirs==4.3.6
 pre_commit==4.0.1
 priority==2.0.0
