@@ -38,4 +38,4 @@ EXPOSE $PORT
 # The command to run your application
 # CMD if [ "$FLASK_ENV" = "production" ] ; then gunicorn -b :$PORT app:app ; else flask run --host=0.0.0.0 --port=$PORT ; fi
 # CMD if [ "$FLASK_ENV" = "production" ] ; then hypercorn app:asgi_app --host 0.0.0.0 --port $PORT ; else flask run --host=0.0.0.0 --port=$PORT ; fi
-CMD if [ "$FLASK_ENV" = "production" ] ; then hypercorn -b 0.0.0.0:$PORT app:asgi_app ; else flask run --host=0.0.0.0 --port=$PORT ; fi
+CMD if [ "$FLASK_ENV" = "production" ] ; then hypercorn -b 0.0.0.0:$PORT app:app ; else flask run --host=0.0.0.0 --port=$PORT ; fi
