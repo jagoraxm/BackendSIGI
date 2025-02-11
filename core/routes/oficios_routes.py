@@ -1,5 +1,8 @@
 # from tkinter import *
 # from PIL import ImageTk, Image
+import cloudinary
+import cloudinary.uploader
+import os
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -23,45 +26,137 @@ database_name = environ.get('MONGO_DB', 'ggame')
 
 connect(db=database_name, host=mongo_url, alias="default")
 
+UPLOAD_FOLDER = './uploads/oficios'  # Carpeta donde se guardarán los archivos
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'pdf'}  # Extensiones permitidas
+
+# Asegúrate de que la carpeta exista
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+# Configurar Cloudinary (debes agregar tus credenciales)
+cloudinary.config(
+    cloud_name='dtoxqmdku',
+    api_key='176283214173616',
+    api_secret='sYGKYcAmuPys8OUrOQA8ZCIqO9U'
+)
+
 @bp_ofic.route('/addOficio', methods=['POST'])
 @jwt_required()  # Verify that the user is logged in
 def addoficios():
-    folio = request.form.get('folio', None)
-    oficio = request.form.get('oficio', None)
-    estatus = request.form.get('estatus')
-    fechaOficio = request.form.get('fechaOficio', None)
-    #imagen_url = request.files.get('imagen_url', None)
-    
-    archivos = request.files.getlist('imagen_url')
-    nombres_archivos = []
-    contenidos_imagenes = []
+    """Endpoint para insertar oficios
+    ---
+    tags:
+      - Ofic
+    """
+    try:
+        folio = request.form.get('folio', None)
+        oficio = request.form.get('oficio', None)
+        estatus = request.form.get('estatus')
+        fechaOficio = request.form.get('fechaOficio', None)
+        #imagen_url = request.files.get('imagen_url', None)
+        
+        archivos = request.files.getlist('imagen_url')
+        print("Archivos recibidos:", archivos)
+        nombres_archivos = []
+        contenidos_imagenes = []
 
-    for archivo in archivos:
-        if archivo.filename == '':
-            continue
+        if oficio is None or fechaOficio is None or folio is None:
+            return jsonify({"msg": "Falta un campo requerido"}), 400
+        
+        if Oficios.find_one(oficio=oficio) is not None:  # Verifica si el oficio ya existe
+            return jsonify({"msg": "Oficio ya existe"}), 400    
+        
+        # Procesar y guardar los archivos
+        for archivo in archivos:
+            if archivo and allowed_file(archivo.filename):
+                nombre_archivo = secure_filename(archivo.filename)
+                ruta_archivo = os.path.join(UPLOAD_FOLDER, nombre_archivo)
 
-        nombre_archivo = secure_filename(archivo.filename)
-        contenido_imagen = archivo.read()
+                # Guarda el archivo en el servidor
+                print("Ruta del archivo:", ruta_archivo)
+                archivo.save(ruta_archivo)
 
-        nombres_archivos.append(nombre_archivo)
-        contenidos_imagenes.append(contenido_imagen)
-    
-    if oficio is None or fechaOficio is None or folio is None:
-        return jsonify({"msg": "Falta un campo requerido"}), 400
-    
-    if Oficios.find_one(oficio=oficio) is not None:    # Checking if the username already exists
-        return jsonify({"msg": "Oficio ya existe"}), 400
-    
-    ofic = Oficios(oficio=oficio, fechaOficio=fechaOficio, folio=folio, estatus="Carga Inicial", imagen_name=nombres_archivos, imagen=contenidos_imagenes)
-    ofic.save()
-    
-    return jsonify({'result': 'ok'}), 201
+                # Agrega el nombre y la ruta del archivo a las listas
+                print("Nombre del archivo:", nombre_archivo)
+                nombres_archivos.append(nombre_archivo)
+                print("Ruta del archivo:", ruta_archivo)
+                contenidos_imagenes.append(ruta_archivo)
 
+        # Guardar los datos en la base de datos
+        ofic = Oficios(
+            oficio=oficio,
+            fechaOficio=fechaOficio,
+            folio=folio,
+            estatus="Carga Inicial",
+            imagen_name=nombres_archivos,  # Lista de nombres de los archivos
+            imagen_path=contenidos_imagenes    # Lista de rutas físicas de los archivos
+        )
+        ofic.save()
+
+        return jsonify({'result': 'ok'}), 201
+    
+    except Exception as e:
+        # Manejo de errores genéricos
+        return jsonify({
+            "msg": "Ocurrió un error al procesar la solicitud.",
+            "error": str(e)
+        }), 500
+
+@bp_ofic.route('/addOficioFS', methods=['POST'])
+@jwt_required()  # Verify that the user is logged in
+def addoficiosFS():
+    """Endpoint para insertar oficios
+    ---
+    tags:
+      - Ofic
+    """
+    try:
+        folio = request.form.get('folio')
+        oficio = request.form.get('oficio')
+        fechaOficio = request.form.get('fechaOficio')
+        archivos = request.files.getlist('imagen_url')
+        
+        if not folio or not oficio or not fechaOficio:
+            return jsonify({"msg": "Falta un campo requerido"}), 400
+
+        if Oficios.find_one(oficio=oficio):
+            return jsonify({"msg": "Oficio ya existe"}), 400
+        
+        # Subir archivos a Cloudinary y obtener URLs
+        imagenes_urls = []
+        for archivo in archivos:
+            if archivo:
+                upload_result = cloudinary.uploader.upload(archivo)
+                print("upload_result --> ", upload_result)
+                imagenes_urls.append(upload_result['secure_url'])
+                print("imagenes_urls --> ", imagenes_urls)
+
+        # Guardar en MongoDB
+        ofic = Oficios(
+            oficio=oficio,
+            fechaOficio=fechaOficio,
+            folio=folio,
+            estatus="Carga Inicial",
+            imagen_path=imagenes_urls  # Guardamos solo las URLs
+        )
+        ofic.save()
+
+        return jsonify({'result': 'ok', 'urls': imagenes_urls}), 201
+    
+    except Exception as e:
+        return jsonify({"msg": "Error al procesar la solicitud.", "error": str(e)}), 500
+    
 #TODO
 @bp_ofic.route('/updateOficio', methods=['PATCH']) 
 @jwt_required()
 def update_oficio():
-    
+    """Endpoint para actualizar oficios
+    ---
+    tags:
+      - Ofic
+    """
     oficio = request.form.get('oficio', None)
     folio = request.form.get('folio', None)
     
@@ -81,6 +176,11 @@ def update_oficio():
 @bp_ofic.route('/oficios', methods=['GET'])
 @jwt_required()  # Verify that the user is logged in
 def oficios():
+    """Endpoint para obtener oficios por mesa
+    ---
+    tags:
+      - Ofic
+    """
     oficcs = []
     identity = get_jwt_identity()
     ofic = Oficios.objects(estatus='Carga Inicial')
@@ -103,6 +203,11 @@ def oficios():
 @bp_ofic.route('/oficiosM2', methods=['GET'])
 @jwt_required()  # Verify that the user is logged in
 def oficiosM2():
+    """Endpoint para obtener oficios por mesa 2
+    ---
+    tags:
+      - Ofic
+    """
     oficcs = []
     identity = get_jwt_identity()
     ofic = Oficios.objects(estatus='Pendiente de Folio')
@@ -117,6 +222,11 @@ def oficiosM2():
 @bp_ofic.route('/oficiosM3', methods=['GET'])
 @jwt_required()  # Verify that the user is logged in
 def oficiosM3():
+    """Endpoint para obtener oficios por mesa 3
+    ---
+    tags:
+      - Ofic
+    """
     oficcs = []
     identity = get_jwt_identity()
     ofic = Oficios.objects(estatus='En Evaluacion')
@@ -131,6 +241,11 @@ def oficiosM3():
 @bp_ofic.route('/oficiosM4', methods=['GET'])
 @jwt_required()  # Verify that the user is logged in
 def oficiosM4():
+    """Endpoint para obtener oficios por mesa 4
+    ---
+    tags:
+      - Ofic
+    """
     oficcs = []
     identity = get_jwt_identity()
     ofic = Oficios.objects(estatus='En Evaluacion Externa')
@@ -145,6 +260,11 @@ def oficiosM4():
 @bp_ofic.route('/oficiosM5', methods=['GET'])
 @jwt_required()  # Verify that the user is logged in
 def oficiosM5():
+    """Endpoint para obtener oficios por mesa 5
+    ---
+    tags:
+      - Ofic
+    """
     oficcs = []
     identity = get_jwt_identity()
     ofic = Oficios.objects(estatus='Observado')
@@ -159,6 +279,11 @@ def oficiosM5():
 @bp_ofic.route('/oficiosM6', methods=['GET'])
 @jwt_required()  # Verify that the user is logged in
 def oficiosM6():
+    """Endpoint para obtener oficios por mesa 6
+    ---
+    tags:
+      - Ofic
+    """
     oficcs = []
     identity = get_jwt_identity()
     ofic = Oficios.objects(estatus='Elaboracion Respuesta P/N')

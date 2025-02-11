@@ -25,6 +25,11 @@ connect(db=database_name, host=mongo_url, alias="default")
 
 @bp_auth.route('/login', methods=['POST'])
 def login():
+    """Endpoint para inicio de sesión
+    ---
+    tags:
+      - Auth
+    """
     username = request.form.get('username', None)
     password = request.form.get('password', None)
 
@@ -62,6 +67,11 @@ def login():
 @bp_auth.route('/checkAuth', methods=['GET'])
 @jwt_required()  # Verify that the user is logged in
 def check_auth():
+    """Endpoint para validar autorización
+    ---
+    tags:
+      - Auth
+    """
     identity = get_jwt_identity()
     user = User.find_one(id=ObjectId(identity))
     if not user:
@@ -71,11 +81,21 @@ def check_auth():
 @bp_auth.route('/logout', methods=['POST'])
 @jwt_required()  # Verify that the user is logged in
 def logout():
+    """Endpoint para cierre de sesión
+    ---
+    tags:
+      - Auth
+    """
     return jsonify({"msg": "Successfully logged out"}), 200
 
 @bp_auth.route('/updateProfile', methods=['PATCH'])
 @jwt_required()
 def update_profile():
+    """Endpoint para actualizar profile
+    ---
+    tags:
+      - Auth
+    """
     new_username = request.form.get('new_username', None)
     new_completeName = request.form.get('new_completeName', None)
     

@@ -26,6 +26,11 @@ connect(db=database_name, host=mongo_url, alias="default")
 @bp_notif.route('/notifications', methods=['GET'])
 @jwt_required()  # Verify that the user is logged in
 def notifications():
+    """Endpoint para obtener notificaciones
+    ---
+    tags:
+      - Notif
+    """
     identity = get_jwt_identity()
     user = Notification.find_one(id=ObjectId(identity))
     if not user:
@@ -35,6 +40,11 @@ def notifications():
 @bp_notif.route('/notifications', methods=['POST'])
 @jwt_required()  # Verify that the user is logged in
 def notification():
+    """Endpoint para insertar notificaciones
+    ---
+    tags:
+      - Notif
+    """
     title = request.form.get('title', None)
     description = request.form.get('description', None)
     #action = request.form.get('action', None)
